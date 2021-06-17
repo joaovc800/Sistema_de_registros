@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-  	<title>Sistema de resgistros</title>
+  	<title>Registros</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -28,11 +28,11 @@
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
           </li>
           <li>
-              <a href="registrar.php"><span class="fa fa-pen"></span> Registrar</a>
+              <a href="registrar.php"><span class="fa fa-pen"></span> Novo</a>
           </li>
           <li>
-            <a href="registros.php"><span class="fa fa-sticky-note"></span> Registros</a>
-          </li>
+            <a href="registros.php"><span class="fa fa-folder-open"></span>Registros</a>
+           </li>
           <li>
             <a href="buscar.php"><span class="fas fa-search"></span> Buscar</a>
           </li>
@@ -73,7 +73,7 @@
                     <a class="nav-link" href="principal.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="registrar.php">Registrar</a>
+                    <a class="nav-link" href="registrar.php">Novo registro</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="registros.php">Registros</a>
