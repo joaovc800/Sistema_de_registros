@@ -96,6 +96,7 @@
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <?php
             include('php/conexao.php');
+	    date_default_timezone_set('America/Sao_Paulo');
             $hoje = date('Y-m-d');
             $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$hoje'";
             $resultado = mysqli_query($conexao, $query);
