@@ -3,6 +3,7 @@ include('conexao.php');
 session_start();
 
 if(empty($_POST['usuario']) || empty($_POST['senha'])){
+    $_SESSION['login_vazio'] = true;
     header('Location: ../index.php');
     exit();
 }
@@ -27,6 +28,7 @@ if($row == 1){
     exit(); // fecha os cabeçalhos
 }
 else{
+    $_SESSION['login_invalido'] = true;
     header('Location: ../index.php'); // se não estiver autenticado ela volta para index
     exit();
 }
