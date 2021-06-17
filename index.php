@@ -1,3 +1,6 @@
+<?php
+    session_start()
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -29,6 +32,30 @@
                 <button type="submit" class="form-control-lg btn btn-primary w-100">Acessar</button>
             </div>
         </form>
+        <div class="container col-md-4">
+        <div class="row">
+        <?php
+            if($_SESSION['login_vazio']){
+        ?>
+        <div class="card bg-danger mt-3">
+            <p class="text-center text-light">Os campos não podem ficar vazios</p>
+        </div>
+        <?php
+            }
+        unset($_SESSION['login_vazio']);
+        ?>
+        <?php
+            if($_SESSION['login_invalido']){
+        ?>
+        <div class="card bg-danger mt-3">
+            <p class="text-center text-light">Usuário ou senha inválida, por favor tente novamente</p>
+        </div>
+        <?php
+            }
+        unset($_SESSION['login_invalido']);
+        ?>
+        </div>
+        </div>
         <div class="mt-3 container-md w-50">
             <hr>
         </div>
