@@ -93,19 +93,27 @@
           </div>
         </nav>
       <form action="buscar.php" method="POST">
-        <div class="input-group mb-3">
-            <input name="data" type="text" class="form-control" placeholder="Exemplo 00/00/00" maxlength="10">
+        <div class="row">
+          <div class="input-group mb-3 col-sm-6">
+              <input name="data" type="text" class="form-control" placeholder="Exemplo 00/00/00" maxlength="10">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </div>
+          <div class="input-group mb-3 col-sm-6">
+            <input name="mat_ra" type="text" class="form-control" placeholder="Matrícula ou RA" maxlength="20">
             <button class="btn btn-outline-dark" type="submit">Buscar</button>
         </div>
+        </div>
+        
         </form>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <?php
+          $mat_ra = $_POST['mat_ra'];
           $data = $_POST['data'];
           $data = explode(" ",$data);
           list($date) = $data;
           $data_sem_barra = array_reverse(explode('/', $date));
           $data_sem_barra = implode("-",$data_sem_barra);
-          $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$data_sem_barra'";
+          $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$data_sem_barra' OR matricula = '$mat_ra'";
           $resultado = mysqli_query($conexao, $query);
           $row = mysqli_num_rows($resultado);
               while($coluna = mysqli_fetch_array($resultado)){ // Enquanto houver dados ficará em loop
