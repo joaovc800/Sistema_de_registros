@@ -44,9 +44,9 @@
           </li>
         </ul>
 
-        <div class="footer">
-        	<p>
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Uninove <i class="icon-heart" aria-hidden="true"></i>
+       <div class="footer fixed-bottom">
+        	<p class="copy">
+					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
