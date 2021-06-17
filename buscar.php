@@ -74,7 +74,7 @@
                     <a class="nav-link" href="principal.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="registrar.php">Registrar</a>
+                    <a class="nav-link" href="registrar.php">Novo registro</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="registros.php">Registros</a>
