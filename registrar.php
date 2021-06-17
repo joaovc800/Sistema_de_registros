@@ -107,7 +107,7 @@
           }
           unset($_SESSION["registrado"]);
           ?>
-            <h1 class="text-center text-muted">Registar</h1>
+            <h1 class="text-center text-muted">Registrar</h1>
         <form action="php/register.php" method="POST">
             <div class="col-md-12">
                 <input name="nome_req" type="text" class="form-control form-control-lg" placeholder="Nome completo">
