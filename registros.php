@@ -121,7 +121,7 @@
                   <h5 class="card-title pricing-card-title"><small><?php echo"<b>".$resp."</b>"?></small></h5>
                   <ul class="list-unstyled mt-3 mb-4">
                     <li class="text-dark">Requisitante: <?php echo"<b>".$req."</b>"?></li>
-                    <li class="text-dark">Matrícula: <?php echo"<b>".$mat."</b>"?></li>
+                    <li class="text-dark">Matrícula/RA: <?php echo"<b>".$mat."</b>"?></li>
                     <li class="text-dark">E-mail: <?php echo"<b>".$email."</b>"?></li>
                     <li class="text-dark">Telefone: <?php echo"<b>".$tel."</b>"?></li>
                     <li class="text-dark">Assunto: <?php echo"<b>".$assunto."</b>"?></li>
