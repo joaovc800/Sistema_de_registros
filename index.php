@@ -21,7 +21,10 @@
             </div>
             <div class="container col-md-4">
                 <div class="mb-3">
-                    <input name="senha" type="password" class="form-control form-control-lg" placeholder="Senha">
+                    <div id="input3" class="input-group">
+                        <input name="senha" type="password" class="form-control form-control-lg" placeholder="Senha">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon3"><i class="fas fa-eye"></i></button>
+                    </div>    
                 </div>
                 <button type="submit" class="form-control-lg btn btn-primary w-100">Acessar</button>
             </div>
@@ -32,5 +35,13 @@
         <p class="fw-light">Universidade Nove de Julho</p>
         <p class="fw-light">All rights reserved</p>
     </div>
+    <script>
+        var input3 = document.querySelector('#input3 input');
+        var button3 = document.querySelector('#input3 button');
+        button3.addEventListener('click', function () {
+        input3.type = input3.type == 'text' ? 'password' : 'text';
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
 </body>
 </html>
