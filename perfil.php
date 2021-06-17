@@ -146,12 +146,17 @@
                     ?>
                     <div class="col-sm-6">
                         <label>Senha</label>
-                        <input name="senha1" type="password" class="form-control"  value="">
+                        <div id="input1" class="input-group">
+                            <input  name="senha1" type="password" class="form-control"  value="">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fas fa-eye"></i></button>
+                        </div>   
                     </div>
                     <div class="col-sm-6">
                         <label>Confirmar senha</label>
-                        <input  name="senha2" type="password" class="form-control"  value="">
-                        
+                        <div id="input2" class="input-group">
+                            <input  name="senha2" type="password" class="form-control"  value="">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-eye"></i></button>
+                        </div>    
                     </div>
                     <div class="col-sm-12">
                         <button class="mt-4 w-100 btn btn-primary">Alterar</button>
@@ -161,6 +166,7 @@
         </div>
       </div>
 		</div>
+    <script src="js/mostrar_senha.js"></script>
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
