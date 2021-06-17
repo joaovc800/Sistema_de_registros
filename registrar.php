@@ -123,7 +123,7 @@
                 <input name="nome_req" type="text" class="form-control form-control-lg" placeholder="Nome completo">
             </div>
             <div class="col-md-12">
-              <input name="matricula" type="number" class="form-control form-control-lg mt-2" placeholder="Matrícula">
+              <input name="matricula" type="number" class="form-control form-control-lg mt-2" placeholder="Matrícula ou RA">
             </div>
             <div class="col-md-12">
                 <input name="email" type="email" class="form-control form-control-lg mt-2" placeholder="E-mail">
