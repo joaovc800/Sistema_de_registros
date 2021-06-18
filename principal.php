@@ -1,11 +1,12 @@
 <?php
     //session_start();
+    include_once('php/conexao.php');
     include("php/verifica_login.php");
 ?>
 <!doctype html>
 <html lang="pt-BR">
   <head>
-  	<title>Sistema de resgistros</title>
+  	<title>Registro SD</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -111,10 +112,16 @@
             </div>
           </div>
         </nav>
-
-        <h2 class="mb-4">Uninove</h2>
-        <p>Bem vindo ao sistema de registros...</p>
-        <p>Sistema desenvolvido para facilitar o registros de atendimento na uninove</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4">Uninove</h2>
+            <p>Bem vindo ao Registro SD...</p>
+            <p>Sistema desenvolvido para facilitar o registros de atendimento na uninove</p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/home.png" width="680px" alt="pessoa com notebook">
+          </div>
+        </div>
       </div>
 		</div>
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
