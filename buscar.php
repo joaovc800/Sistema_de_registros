@@ -115,7 +115,7 @@
       <form action="buscar.php" method="POST">
         <div class="row">
           <div class="input-group mb-3 col-sm-6">
-              <input name="data" type="text" class="form-control" placeholder="Exemplo 00/00/00" maxlength="10">
+              <input name="data" type="text" class="form-control" placeholder="Exemplo 00/00/00" maxlength="10"  onkeypress="mascaraData( this, event )">
               <button class="btn btn-outline-dark" type="submit">Buscar</button>
           </div>
           <div class="input-group mb-3 col-sm-6">
@@ -176,6 +176,7 @@
       </div>
 		</div>
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
+    <script src="js/mascara.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
