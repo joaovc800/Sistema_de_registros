@@ -159,7 +159,7 @@
                     <textarea name="resolucao" class="form-control mt-5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" maxlength="400"></textarea>
                     <label for="floatingTextarea2">Resolução</label>
                 </div>
-                <button type="submit" class="w-100 mt-2 btn btn-primary btn-lg">Enviar</button>
+                <button type="submit" class="w-100 mt-2 btn btn-primary btn-lg">Enviar <span class="fas fa-paper-plane"></button>
             </div>
         </form>
         </div>
