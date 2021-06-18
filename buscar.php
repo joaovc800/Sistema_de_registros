@@ -53,7 +53,7 @@
     	</nav>
 
         <!-- Page Content  -->
-      <div id="content" class="container col-md-8 p-2 p-md-5">
+     <div id="content" class="container w-75 col-md-8 p-2 p-md-5">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
