@@ -116,11 +116,11 @@
         <div class="row">
           <div class="input-group mb-3 col-sm-6">
               <input name="data" type="text" class="form-control" placeholder="Exemplo 00/00/00" maxlength="10"  onkeypress="mascaraData( this, event )">
-              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+              <button class="btn btn-outline-dark" type="submit">Buscar <span class="fas fa-search"></span></button>
           </div>
           <div class="input-group mb-3 col-sm-6">
             <input name="mat_ra" type="text" class="form-control" placeholder="Matrícula ou RA" maxlength="20">
-            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            <button class="btn btn-outline-dark" type="submit">Buscar <span class="fas fa-search"></span></button>
         </div>
         </div>
         
