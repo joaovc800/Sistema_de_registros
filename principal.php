@@ -119,7 +119,7 @@
             <p>Sistema desenvolvido para facilitar o registros de atendimento na uninove</p>
           </div>
           <div class="col-md-6">
-            <img src="images/home.png" width="680px" alt="pessoa com notebook">
+            <img src="images/home.png" width="150%" alt="pessoa com notebook">
           </div>
         </div>
       </div>
