@@ -1,3 +1,15 @@
+<!-- 
+ * SOBRE
+ *
+ * ESSE SOFTWARE FOI DESENVOLVIDO UNICO E EXCLUSIVAMENTE PARA SER UTILIZADO
+ * NAS DEPENDENCIAS DA UNINOVE.
+ * SUA VENDA OU REPRODUÇÃO PARA TERCEIROS SEM AUTORIZAÇÃO  É PROIBIDA!
+ * Contato: joaovc@uninove.br / (11)986287128
+ * 
+ Copyright 2021 - João Vinicius da Costa
+ *
+-->
+
 <?php
     session_start()
 ?>
