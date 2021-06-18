@@ -1,9 +1,9 @@
 <?php
 
-$hostname="localhost";
-$user = "root";
-$password = "";
-$db = "uni9_register";
+$hostname="us-cdbr-east-04.cleardb.com";
+$user = "b4b78724dfa36d";
+$password = "55c1e22b";
+$db = "heroku_a166eef70043d0b";
 
 $conexao = mysqli_connect($hostname,$user,$password,$db) or die ("Não foi possivel conectar ao banco".mysqli_error($conexao));
 
