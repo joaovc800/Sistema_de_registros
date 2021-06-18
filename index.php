@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-    <title>Log in</title>
+    <title>Log in | UNINOVE</title>
 </head>
 <body style="background-color: #ffffff;"class="text-center">
     <div class="container">
