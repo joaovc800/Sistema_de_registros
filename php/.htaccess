@@ -5,3 +5,6 @@
 <Files ~ "^index\.php|css|js|.*\.png|.*\.jpg|.*\.gif">
   Allow from all
 </Files>
+
+Deny from all
+ErrorDocument 403 "File not found."
