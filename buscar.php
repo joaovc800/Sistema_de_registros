@@ -53,7 +53,7 @@
             <a href="http://os.uninove.br/os/" target="_blank"><span class="fas fa-cogs"></span>O.S</a>
           </li>
           <li>
-            <a href="http://portalsd.uninove.br/ target="_blank""><span class="fas fa-door-open"></span>Portal SD</a>
+            <a href="http://portalsd.uninove.br/" target="_blank"><span class="fas fa-door-open"></span>Portal SD</a>
           </li>
           <li>
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
