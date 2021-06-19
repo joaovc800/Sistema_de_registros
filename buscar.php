@@ -150,7 +150,7 @@
                   $hora = $coluna['hora_formatada'];
               
         ?>
-         <div class="col-md-12">
+         <div class="col-md-12 blr3">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header bg-success">
                      <p class="my-0 fw-normal text-light">Registro <?php echo $id?> encontrado</p>
