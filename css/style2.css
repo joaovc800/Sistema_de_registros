@@ -1,0 +1,30 @@
+@keyframes blr {
+    from{
+        filter: blur(30px);
+        transform: translateX(-1000px);
+    }to{
+        filter: blur(0px);
+        transform: translateX(0);
+    }
+}
+@keyframes blr2 {
+    from{
+        filter: blur(30px);
+      
+    }to{
+        filter: blur(0px);
+    }
+}
+#sidebar ul li:hover{
+    background-color: rgba(0, 59, 250, .50);
+  }
+
+.blr{
+    animation-name: blr;
+    animation-duration: .8s;
+}
+.blr2{
+    animation-name: blr2;
+    animation-duration: 1s;
+   
+}
