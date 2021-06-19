@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-  	<title>Registros | UNINOVE</title>
+  	<title>Registros</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
-	  <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style2.css">
     <style>
         @media screen and (max-width: 600px){
             #sidebar,#sidebarCollapse{
@@ -116,6 +116,7 @@
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <?php
             include('php/conexao.php');
+            include('php/select.php');
             date_default_timezone_set('America/Sao_Paulo');
             $hoje = date('Y-m-d');
             $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$hoje'";
@@ -140,6 +141,7 @@
                      </div>
                 <div class="card-body">
                   <h5 class="card-title pricing-card-title"><small><?php echo"<b>".$resp."</b>"?></small></h5>
+                  <p class="card-title pricing-card-title"><small><?php echo"<b>".$cargo."</b>"?></small></p>
                   <ul class="list-unstyled mt-3 mb-4">
                     <li class="text-dark">Requisitante: <?php echo"<b>".$req."</b>"?></li>
                     <li class="text-dark">Matrícula/RA: <?php echo"<b>".$mat."</b>"?></li>
