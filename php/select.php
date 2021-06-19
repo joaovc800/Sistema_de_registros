@@ -6,6 +6,7 @@ $row = mysqli_num_rows($resultado);
     while($coluna = mysqli_fetch_array($resultado)){ // Enquanto houver dados ficará em loop
         $email = $coluna["email"];
         $mat = $coluna["matricula"];
+        $cargo = $coluna['sessao'];
         
     }
 
