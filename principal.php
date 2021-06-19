@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <style>
         @media screen and (max-width: 600px){
             #sidebar,#sidebarCollapse{
@@ -24,7 +25,6 @@
                 right: 107px;
             }
         }
-
     </style>
   </head>
   <body>
@@ -114,12 +114,12 @@
         </nav>
         <div class="row">
           <div class="col-md-6">
-            <h2 class="mb-4">Uninove</h2>
-            <p>Bem vindo ao Registro SD...</p>
-            <p>Sistema desenvolvido para facilitar o registros de atendimento na uninove</p>
+            <h2 class="blr2 mb-4">Uninove</h2>
+            <p class="blr2">Bem vindo ao Registro SD...</p>
+            <p class="blr2">Sistema desenvolvido para facilitar o registros de atendimento na uninove</p>
           </div>
           <div class="col-md-6">
-            <img src="images/home.png" width="150%" alt="pessoa com notebook">
+            <img class="blr"src="images/home.png" width="150%" alt="pessoa com notebook">
           </div>
         </div>
       </div>
