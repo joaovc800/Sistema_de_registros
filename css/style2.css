@@ -15,6 +15,14 @@
         filter: blur(0px);
     }
 }
+@keyframes blr3 {
+    from{
+        transform: translateX(-1000px);
+      
+    }to{
+        transform: translateX(0);
+    }
+}
 #sidebar ul li:hover{
     background-color: rgba(0, 59, 250, .50);
   }
@@ -26,5 +34,10 @@
 .blr2{
     animation-name: blr2;
     animation-duration: 1s;
+   
+}
+.blr3{
+    animation-name: blr3;
+    animation-duration: .5s;
    
 }
