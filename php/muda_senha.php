@@ -8,8 +8,8 @@ if(empty($_POST['senha1']) || empty($_POST['senha2'])){
     exit();
 }
 
-$senha1 = mysqli_real_escape_string($conexao,$_POST['senha1']);
-$senha2 = mysqli_real_escape_string($conexao,$_POST['senha2']);
+$senha1 = mysqli_real_escape_string($conexao,md5($_POST['senha1']));
+$senha2 = mysqli_real_escape_string($conexao,md5($_POST['senha2']));
 
 if($senha1 != $senha2){
 	$_SESSION['senha_nao_corresponde'] = true;
