@@ -113,7 +113,7 @@
             </div>
           </div>
         </nav>
-        <h2 class="mb-4">Seu perfil</h2>
+        <h2 class="mb-3">Seu perfil</h2>
         <div class="container">
             <div class="row g-3">
                 <div class="col-sm-6">
@@ -124,20 +124,20 @@
                     <label>Nome</label>
                     <input type="text" class="form-control" readonly value="<?php echo $_SESSION['nome']?>">
                 </div>
-                <div class="col-12 mt-3">
+                <div class="col-12 mt-2">
                     <label>E-mail</label>
                     <input type="text" class="form-control" readonly value="<?php echo $email?>">
                 </div>
-                <div class="col-12 mt-3">
+                <div class="col-12 mt-2">
                     <label>Sessão Service Desk</label>
                     <input type="text" class="form-control" readonly value="<?php echo $cargo?>">
                 </div>
-                <div class="col-12 mt-3">
+                <div class="col-12 mt-2">
                     <label>Matrícula</label>
                     <input type="text" class="form-control" readonly value="<?php echo $mat?>">
                 </div>
                 <form class="container" action="php/muda_senha.php" method="POST">
-                    <h5 class="h5 mt-3">Alterar senha</h5>
+                    <h5 class="h5 mt-2">Alterar senha</h5>
                     <?php
                     if($_SESSION["senha_vazia"]){
                     ?>
@@ -190,7 +190,7 @@
                         </div>    
                     </div>
                     <div class="col-sm-12">
-                        <button class="mt-3 w-100 btn btn-primary">Alterar</button>
+                        <button class="mt-2 w-100 btn btn-primary">Alterar</button>
                     </div>
                     </div>
                 </form>
