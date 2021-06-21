@@ -141,7 +141,6 @@
                      </div>
                 <div class="card-body">
                   <h5 class="card-title pricing-card-title"><small><?php echo"<b>".$resp."</b>"?></small></h5>
-                  <p class="card-title pricing-card-title"><small><?php echo"<b>".$cargo."</b>"?></small></p>
                   <ul class="list-unstyled mt-3 mb-4">
                     <li class="text-dark">Requisitante: <?php echo"<b>".$req."</b>"?></li>
                     <li class="text-dark">Matrícula/RA: <?php echo"<b>".$mat."</b>"?></li>
