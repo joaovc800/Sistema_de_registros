@@ -16,7 +16,7 @@ $telefone = mysqli_escape_string($conexao,$_POST["telefone"]);
 $assunto = mysqli_escape_string($conexao,$_POST["assunto"]);
 $resolucao = mysqli_escape_string($conexao,$_POST["resolucao"]);
 
-$query = "INSERT INTO registros (responsavel, requisitante, matricula, email, telefone, assunto, resolucao,data,hora) VALUES ('{$responsavel}', '{$requisitante}', '{$matricula}', '{$email}', '{$telefone}', '{$assunto}', '{$resolucao}',SYSDATE(),CURTIME())";
+$query = "INSERT INTO registros (responsavel, requisitante, matricula, email, telefone, assunto, resolucao,data,hora) VALUES ('{$responsavel}', '{$requisitante}', '{$matricula}', '{$email}', '{$telefone}', '{$assunto}', '{$resolucao}',SYSDATE(),CURRENT_TIME())";
 
 if($conexao->query($query) === TRUE){
     $_SESSION["registrado"] = true;
