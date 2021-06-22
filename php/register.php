@@ -17,9 +17,10 @@ $assunto = mysqli_escape_string($conexao,$_POST["assunto"]);
 $resolucao = mysqli_escape_string($conexao,$_POST["resolucao"]);
 
 date_default_timezone_set('America/Sao_Paulo');
-$hora = Date("H:i");
+$hora = date("H:i");
+$hoje = date('Y-m-d');
 
-$query = "INSERT INTO registros (responsavel, requisitante, matricula, email, telefone, assunto, resolucao,data,hora) VALUES ('{$responsavel}', '{$requisitante}', '{$matricula}', '{$email}', '{$telefone}', '{$assunto}', '{$resolucao}',SYSDATE(),'{$hora}')";
+$query = "INSERT INTO registros (responsavel, requisitante, matricula, email, telefone, assunto, resolucao,data,hora) VALUES ('{$responsavel}', '{$requisitante}', '{$matricula}', '{$email}', '{$telefone}', '{$assunto}', '{$resolucao}','{$hoje}','{$hora}')";
 
 if($conexao->query($query) === TRUE){
     $_SESSION["registrado"] = true;
