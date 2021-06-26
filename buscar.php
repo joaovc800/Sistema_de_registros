@@ -139,7 +139,7 @@
           list($date) = $data;
           $data_sem_barra = array_reverse(explode('/', $date));
           $data_sem_barra = implode("-",$data_sem_barra);
-          $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$data_sem_barra' OR matricula = '$mat_ra' OR assunto LIKE '%$assunto%' OR resolucao LIKE '%$assunto%'";
+          $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$data_sem_barra' OR matricula = '$mat_ra' OR assunto LIKE '%$assunto%'";
           $resultado = mysqli_query($conexao, $query);
           $row = mysqli_num_rows($resultado);
               while($coluna = mysqli_fetch_array($resultado)){ // Enquanto houver dados ficará em loop
