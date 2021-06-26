@@ -125,7 +125,7 @@
           </div>
           <div class="input-group mb-3 col-sm-4">
             <input name="assunto" type="text" class="form-control" placeholder="Assunto">
-            <button class="btn btn-outline-dark" name="pesq" type="submit">Buscar<span class="fas fa-search"></span></button>
+            <button class="btn btn-outline-dark" name="pesq" type="submit">Buscar <span class="fas fa-search"></span></button>
           </div>
         </div>
         
