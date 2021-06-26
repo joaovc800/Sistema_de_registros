@@ -115,26 +115,31 @@
         </nav>
       <form action="buscar.php" method="POST">
         <div class="row">
-          <div class="input-group mb-3 col-sm-6">
+          <div class="input-group mb-3 col-sm-4">
               <input name="data" type="text" class="form-control" placeholder="Exemplo 00/00/00" maxlength="10"  onkeypress="mascaraData( this, event )">
               <button class="btn btn-outline-dark" type="submit">Buscar <span class="fas fa-search"></span></button>
           </div>
-          <div class="input-group mb-3 col-sm-6">
+          <div class="input-group mb-3 col-sm-4">
             <input name="mat_ra" type="text" class="form-control" placeholder="Matrícula ou RA" maxlength="20">
             <button class="btn btn-outline-dark" type="submit">Buscar <span class="fas fa-search"></span></button>
-        </div>
+          </div>
+          <div class="input-group mb-3 col-sm-4">
+            <input name="assunto" type="text" class="form-control" placeholder="Assunto">
+            <button class="btn btn-outline-dark" name="pesq" type="submit">Buscar<span class="fas fa-search"></span></button>
+          </div>
         </div>
         
         </form>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <?php
+          $assunto = $_POST['assunto'];
           $mat_ra = $_POST['mat_ra'];
           $data = $_POST['data'];
           $data = explode(" ",$data);
           list($date) = $data;
           $data_sem_barra = array_reverse(explode('/', $date));
           $data_sem_barra = implode("-",$data_sem_barra);
-          $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$data_sem_barra' OR matricula = '$mat_ra'";
+          $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE data = '$data_sem_barra' OR matricula = '$mat_ra' OR assunto LIKE '%$assunto%' OR resolucao LIKE '%$assunto%'";
           $resultado = mysqli_query($conexao, $query);
           $row = mysqli_num_rows($resultado);
               while($coluna = mysqli_fetch_array($resultado)){ // Enquanto houver dados ficará em loop
