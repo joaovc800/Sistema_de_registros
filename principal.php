@@ -55,7 +55,7 @@
             border: 6px solid #fff;
             border-color: #fff transparent #fff transparent;
             margin: 8px;
-            animation: spin 10s ease infinite;
+            animation: spin 1s ease infinite;
         }
 
         @keyframes spin {
