@@ -129,7 +129,7 @@
             </div>
           </div>
         </nav>
-      <form action="buscar.php" method="POST">
+      <form action="buscar2.php" method="POST">
         <div class="row">
           <div class="input-group mb-3 col-sm-12">
               <input name="data" type="text" class="form-control" placeholder="Exemplo 00/00/00" maxlength="10"  onkeypress="mascaraData( this, event )">
