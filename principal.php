@@ -55,7 +55,7 @@
             border: 6px solid #fff;
             border-color: #fff transparent #fff transparent;
             margin: 8px;
-            animation: spin 1s ease infinite;
+            animation: spin 2s ease infinite;
         }
 
         @keyframes spin {
@@ -73,7 +73,7 @@
     <main>
     <div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active h-100 fixed-top">
-            <h5 class="text-center"><a href="principal.php" class="logo">Uni9</a></h5>
+            <h3 class="text-center"><a href="principal.php" class="logo">Uni9</a></h3>
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
