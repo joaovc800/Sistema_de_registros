@@ -22,7 +22,7 @@
             }
             .name{
                 position: relative;
-                right: 107px;
+                right: 32%;
             }
         }
         .dropdown-item:hover{
