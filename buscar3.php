@@ -78,7 +78,7 @@
         <!-- Page Content  -->
      <div id="content" class="container w-75 col-md-8 p-2 p-md-5">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="sli navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
 
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
