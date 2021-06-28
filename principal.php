@@ -3,10 +3,10 @@
     include_once('php/conexao.php');
     include("php/verifica_login.php");
 ?>
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-  	<title>Registro SD | UNINOVE</title>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Registro SD | UNINOVE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -22,19 +22,58 @@
             }
             .name{
                 position: relative;
-                right: 33%;
+                right: 107px;
             }
         }
         .dropdown-item:hover{
         background-color: rgba(0, 59, 250, .50) !important;
         }
+        .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(29, 28, 28);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .loader {
+            width: 80px;
+            height: 80px;
+        }
+
+        .loader::after {
+            content: "";
+            display: block;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            border-color: #fff transparent #fff transparent;
+            margin: 8px;
+            animation: spin 10s ease infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
-  </head>
-  <body>
-		
-  <div class="wrapper d-flex align-items-stretch">
+</head>
+<body>
+    <main>
+    <div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active h-100 fixed-top">
-            <h3 class="text-center"><a href="principal.php" class="logo">Uni9</a></h3>
+            <h5 class="text-center"><a href="principal.php" class="logo">Uni9</a></h5>
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
@@ -69,8 +108,8 @@
 
         <div class="footer fixed-bottom">
         	<p class="copy">
-					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
-					</p>
+			Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
+		</p>
         </div>
     	</nav>
 
@@ -141,10 +180,21 @@
         </div>
       </div>
     </div>
+    </main>
+    <div class="overlay">
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        const overlay = document.querySelector(".overlay");
+        window.addEventListener("load", function () {
+        overlay.style.display = "none";
+        })
+    </script>
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
-	      <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
