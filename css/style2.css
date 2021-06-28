@@ -84,6 +84,45 @@
   nav.sli ul li a:hover:after {
     width: 100%;
   }
+  @media screen and (max-width: 600px){
+    nav.sli ul {
+        list-style: none;
+      }
+      nav.sli ul li {
+        display: inline-block;
+      }
+      nav.sli ul li ul li {
+        display: block;
+      }
+      nav.sli ul li a,
+      nav.sli ul li a:after,
+      nav.sli ul li a:before {
+          transition: all .5s;
+      }
+      nav.sli ul li a:hover {
+        color: #003b96;
+      }
+      
+      nav.sli ul li a,
+      nav.fill ul li a {
+        position: relative;
+      }
+      nav.sli ul li a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: #003b96;
+        height: 3px;
+      }
+      nav.sli ul li a:hover:after {
+        width: 100%;
+      }
+}
 
   
  
