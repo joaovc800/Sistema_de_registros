@@ -195,14 +195,14 @@
                         <label>Senha</label>
                         <div id="input1" class="input-group">
                             <input  name="senha1" type="password" class="form-control"  value="">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fas fa-eye"></i></button>
+                            <button class="btn btn-secondary" type="button" id="button-addon1"><i class="fas fa-eye"></i></button>
                         </div>   
                     </div>
                     <div class="col-sm-6">
                         <label>Confirmar senha</label>
                         <div id="input2" class="input-group">
                             <input  name="senha2" type="password" class="form-control"  value="">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-eye"></i></button>
+                            <button class="btn btn-secondary" type="button" id="button-addon2"><i class="fas fa-eye"></i></button>
                         </div>    
                     </div>
                     <div class="col-sm-12">
