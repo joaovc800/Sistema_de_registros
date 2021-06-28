@@ -39,7 +39,7 @@
                 <div class="mb-3">
                     <div id="input3" class="input-group">
                         <input name="senha" type="password" class="form-control form-control-lg" placeholder="Senha">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon3"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-secondary" type="button" id="button-addon3"><i class="fas fa-eye"></i></button>
                     </div>    
                 </div>
                 <button type="submit" class="form-control-lg btn btn-primary w-100">Acessar</button>
