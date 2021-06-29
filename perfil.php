@@ -39,7 +39,7 @@
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
           </li>
-          <li class="">
+          <li>
               <a href="registrar.php"><span class="fa fa-pen"></span> Novo</a>
           </li>
           <li>
@@ -48,9 +48,9 @@
           <li class="nav-item dropend">
             <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fas fa-search"></span>Buscar</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-dark text-center" href="buscar2.php">Por Data</a></li>
-                <li><a class="dropdown-item text-dark text-center" href="buscar.php">Por Matricula ou RA</a></li>
-                <li><a class="dropdown-item text-dark text-center" href="buscar3.php">Por Assunto</a></li>
+                <li><a class="dropdown-item text-light text-center" href="buscar2.php">Por Data</a></li>
+                <li><a class="dropdown-item text-light text-center" href="buscar.php">Por Matricula ou RA</a></li>
+                <li><a class="dropdown-item text-light text-center" href="buscar3.php">Por Assunto</a></li>
             </ul>
            </li>
           <li>
