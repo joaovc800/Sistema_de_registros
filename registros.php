@@ -24,9 +24,6 @@
                 right: 33%;
             }
         }
-        .dropdown-item:hover{
-        background-color: rgba(0, 59, 250, .50) !important;
-        }
 
     </style>
   </head>
