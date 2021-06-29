@@ -132,7 +132,7 @@
           <?php
           if($_SESSION["campos_vazios"]){
           ?>
-          <div class="row">
+          <div class="blr3 row">
             <div class="card bg-danger">
                 <p class="text-light text-center">Os campos abaixo não podem ficar vazios, por favor preencha todos corretamente!</p>
             </div>
@@ -144,7 +144,7 @@
           <?php
           if($_SESSION["registrado"]){
           ?>
-          <div class="row">
+          <div class="blr3 row">
             <div class="card bg-success">
                 <p class="text-light text-center">Registro incluido com sucesso!</p>
             </div>
