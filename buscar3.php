@@ -145,7 +145,7 @@
                 if(empty($_POST['assunto'])){
                     //echo "vazio";
                 }else{
-                $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE assunto LIKE '%$assunto%' OR resolucao LIKE '%$assunto%'";
+                $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE assunto LIKE '%$assunto%' OR resolucao LIKE '%$assunto%' ORDER BY data ASC";
                 $resultado = mysqli_query($conexao, $query);
                 $row = mysqli_num_rows($resultado);
                 if($row > 0){
