@@ -23,7 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/style2.css">
     <title>Log in | UNINOVE</title>
 </head>
 <body style="background-color: #ffffff;"class="text-center mt-5">
@@ -50,7 +50,7 @@
         <?php
             if($_SESSION['login_vazio']){
         ?>
-        <div class="card bg-danger mt-3">
+        <div class="blr3 card bg-danger mt-3">
             <p class="text-center text-light">Os campos não podem ficar vazios</p>
         </div>
         <?php
@@ -60,7 +60,7 @@
         <?php
             if($_SESSION['login_invalido']){
         ?>
-        <div class="card bg-danger mt-3">
+        <div class="blr3 card bg-danger mt-3">
             <p class="text-center text-light">Usuário ou senha inválida, por favor tente novamente</p>
         </div>
         <?php
