@@ -157,7 +157,7 @@
                     <?php
                     if($_SESSION["senha_vazia"]){
                     ?>
-                    <div class="row">
+                    <div class="blr3 row">
                         <div class="card bg-danger">
                             <p class="text-light text-center">Os campos abaixo não podem ficar vazios, por favor preencha todos corretamente!</p>
                         </div>
@@ -169,7 +169,7 @@
                     <?php
                     if($_SESSION["senha_nao_corresponde"]){
                     ?>
-                    <div class="row">
+                    <div class="blr3 row">
                         <div class="card bg-danger">
                             <p class="text-light text-center">As senhas não correspondem, por favor tentar novamente</p>
                         </div>
@@ -181,7 +181,7 @@
                      <?php
                     if($_SESSION["senha_alterada"]){
                     ?>
-                    <div class="row">
+                    <div class="blr3 row">
                         <div class="card bg-success">
                             <p class="text-light text-center">Senha alterada com sucesso!</p>
                         </div>
