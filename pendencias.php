@@ -156,7 +156,7 @@
         ?>
          <div class="col-md-12 blr3">
                 <div class="card mb-4 shadow-sm">
-                    <div class="card-header bg-warning">
+                    <div class="card-header bg-danger">
                         <p class="my-0 fw-normal text-light">Registro Pendente</p>
                      </div>
                 <div class="card-body">
@@ -187,16 +187,30 @@
                         <input type="text" class="form-control form-control-sm mt-2" value="<?php echo $data.' as '.$hora?>" readonly>
                     </div>
                     <div class="col-md-12">
-                        <div class="form-floating">
-                            <textarea name="resolucao" class="form-control form-control-sm mt-2" id="floatingTextarea2" style="height: 100px" maxlength="400" readonly><?php echo $res?></textarea>
-                            <label for="floatingTextarea2">Resolução</label>
-                        </div>
+                      <div class="card mt-2">
+                        <p class="text-dark p-2">Atualizado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br>".$res?></p>
+                      </div>
+                      <?php
+                      $query2 = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM updates WHERE n_registro = '$id'";
+                      $resultado2 = mysqli_query($conexao, $query2);
+                      while($coluna2 = mysqli_fetch_array($resultado2)){ // Enquanto houver dados ficará em loop
+                        $respAlt = $coluna2['responsavel']; 
+                        $atualizacao = $coluna2['atualizacao'];
+                        $data = $coluna2['data_formatada'];
+                        $hora = $coluna2['hora_formatada'];
+                    ?>
+                    <div class="card mt-2">
+                      <p class="text-dark">Atualizado por: <?php echo "<b>".$respAlt."</b> em $data as $hora"."<br>".$atualizacao?></p>
+                    </div>
+                    <?php
+                    }
+                  ?>
+                    </div>
                     </div>
                     <div class="container-sm">
                         <hr>
                     </div>
-                    </div>
-                        <div class="col-md-12">
+                        <div class="container col-md-12">
                         <p>Incluir Observações</p>
                             <div class="form-floating" id="textArea">
                                 <textarea name="res" id="texto" class="form-control form-control-sm mt-2" id="floatingTextarea2" style="height: 100px" maxlength="400"></textarea><label for="floatingTextarea2">Resolução</label>
@@ -205,11 +219,12 @@
                                 <option name="status" value="Pendente"><?php echo $status?></option>
                                 <option name="status" value="Concluído">Concluído</option>
                             </select>
-                            <button id="btn" type="submit" class="w-100 mt-2 btn btn-success btn-lg">Concluir <span class="fas fa-check-circle"></button>
                         </div>
-                        <div class="col-md-12">
-                    </div>
+                        <div class="container">
+                          <button id="btn" type="submit" class="p-1 w-100 mt-2 btn btn-success btn-lg">Concluir <span class="fas fa-check-circle"></button>
+                        </div>
                     </form>
+                    </div>
                 </div>    
               </div>
             </div>  
