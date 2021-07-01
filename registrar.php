@@ -180,7 +180,7 @@
             <select name="status" class="form-select mt-2" aria-label="Default select example">
               <option selected disabled>Status</option>
               <option name="status" value="Pendente">Pendente</option>
-              <option name="status" value="Concluído">Concluido</option>
+              <option name="status" value="Concluído">Concluído</option>
             </select>
             </div>
             <div class="col-md-12">
