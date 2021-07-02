@@ -6,7 +6,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-  	<title>Buscar | UNINOVE</title>
+  	<title>Pendentes | UNINOVE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -27,6 +27,12 @@
         }
 	    #sidebar .dropdown-item:hover{
         background-color: rgba(0, 59, 250, .50) !important;
+        }
+        .down{
+          position: relative;
+          top : 15px;
+          left: 5px;
+          padding: 0;
         }
 
     </style>
@@ -166,29 +172,43 @@
                     <div class="row">
                     <form action="php/update.php" method="POST">
                     <div class="col-md-12">
+                        <p class="text-left down">Número do registro ↓</p>
                         <input name="registro" type="text" class="form-control form-control-sm" value="<?php echo $id?>" readonly>
                     </div>
+                    <!-- divisão -->
                     <div class="col-md-12">
-                        <input type="text" class="form-control form-control-sm mt-2" value="<?php echo $req?>" readonly>
+                        <p class="text-left down">Requisitante ↓</p>
+                        <input type="text" class="form-control form-control-sm" value="<?php echo $req?>" readonly>
                     </div>
+                    <!-- divisão -->
                     <div class="col-md-12">
-                        <input type="number" class="form-control form-control-sm mt-2" value="<?php echo $mat?>" readonly>
+                        <p class="text-left down">Matricula / RA ↓</p>
+                        <input type="number" class="form-control form-control-sm" value="<?php echo $mat?>" readonly>
                     </div>
+                    <!-- divisão -->
                     <div class="col-md-12">
-                        <input type="email" class="form-control form-control-sm mt-2" value="<?php echo $email?>" readonly>
+                        <p class="text-left down">E-mail ↓</p>
+                        <input type="email" class="form-control form-control-sm" value="<?php echo $email?>" readonly>
                     </div>
+                    <!-- divisão -->
                     <div class="col-md-12">
-                        <input type="text" class="form-control form-control-sm mt-2" value="<?php echo $tel?>" readonly>
+                        <p class="text-left down">Telefone ↓</p>
+                        <input type="text" class="form-control form-control-sm" value="<?php echo $tel?>" readonly>
                     </div>
+                    <!-- divisão -->
                     <div class="col-md-12">
-                        <input type="text" class="form-control form-control-sm mt-2" value="<?php echo $assunt?>" readonly>
+                        <p class="text-left down">Assunto ↓</p>
+                        <input type="text" class="form-control form-control-sm" value="<?php echo $assunt?>" readonly>
                     </div>
+                    <!-- divisão -->
                     <div class="col-md-12">
-                        <input type="text" class="form-control form-control-sm mt-2" value="<?php echo $data.' as '.$hora?>" readonly>
+                        <p class="text-left down">Data e hora do registro aberto ↓</p>
+                        <input type="text" class="form-control form-control-sm" value="<?php echo $data.' as '.$hora?>" readonly>
                     </div>
+                    <!-- divisão -->
                     <div class="col-md-12">
                       <div class="card mt-2">
-                        <p class="text-dark p-2">Atualizado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></p>
+                        <p class="text-dark p-2">Registrado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></p>
                       </div>
                       <?php
                       $query2 = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM updates WHERE n_registro = '$id'";
@@ -221,7 +241,7 @@
                             </select>
                         </div>
                         <div class="container">
-                          <button id="btn" type="submit" class="p-1 w-100 mt-2 btn btn-success btn-lg">Atualizar <span class="fas fa-check-circle"></button>
+                          <button id="btn" type="submit" class="p-1 w-100 mt-2 btn btn-success btn-lg">Concluir <span class="fas fa-check-circle"></button>
                         </div>
                     </form>
                     </div>
