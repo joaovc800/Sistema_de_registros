@@ -33,7 +33,7 @@
 </head>
 <body style="background-color: #ffffff;"class="text-center mt-5">
     <div class="container">
-        <img class="img" src="images/uni9.jpg" width="420">
+        <img class="img" src="images/uni9.png" width="420">
         <form action="php/login.php" method="POST">
             <div class="container col-md-4">      
                 <div class="mb-3">
