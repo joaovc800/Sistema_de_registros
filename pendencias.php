@@ -221,7 +221,7 @@
                             </select>
                         </div>
                         <div class="container">
-                          <button id="btn" type="submit" class="p-1 w-100 mt-2 btn btn-success btn-lg">Concluir <span class="fas fa-check-circle"></button>
+                          <button id="btn" type="submit" class="p-1 w-100 mt-2 btn btn-success btn-lg">Atualizar <span class="fas fa-check-circle"></button>
                         </div>
                     </form>
                     </div>
