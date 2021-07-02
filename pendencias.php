@@ -188,7 +188,7 @@
                     </div>
                     <div class="col-md-12">
                       <div class="card mt-2">
-                        <p class="text-dark p-2">Atualizado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br>".$res?></p>
+                        <p class="text-dark p-2">Atualizado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></p>
                       </div>
                       <?php
                       $query2 = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM updates WHERE n_registro = '$id'";
@@ -200,7 +200,7 @@
                         $hora = $coluna2['hora_formatada'];
                     ?>
                     <div class="card mt-2">
-                      <p class="text-dark">Atualizado por: <?php echo "<b>".$respAlt."</b> em $data as $hora"."<br>".$atualizacao?></p>
+                      <p class="text-dark">Atualizado por: <?php echo "<b>".$respAlt."</b> em $data as $hora"."<br><br>".$atualizacao?></p>
                     </div>
                     <?php
                     }
