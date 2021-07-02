@@ -28,7 +28,7 @@
 </head>
 <body style="background-color: #ffffff;"class="text-center mt-5">
     <div class="container">
-        <img src="images/uni9.png">
+        <img src="images/uni9.png" width="300px">
         <form action="php/login.php" method="POST">
             <div class="container col-md-4">      
                 <div class="mb-3">
