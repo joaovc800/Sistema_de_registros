@@ -177,7 +177,7 @@
                     <li class="text-dark">Data: <?php echo"<b>".$data.' as '.$hora."</b>"?></li>
                     <li class="text-dark h6 mt-2">Resolução</li>
                     <div class="card mt-2">
-                    <li class="text-dark p-2">Atualizado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></li>
+                    <li class="text-dark p-2">Registrado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></li>
                     </div>
                     <?php
                       $query2 = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM updates WHERE n_registro = '$id'";
