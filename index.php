@@ -27,7 +27,7 @@
     <title>Log in | UNINOVE</title>
     <style>
        .img{
-	    margin-top: 30%;
+	    margin-top: 15%;
        }
     </style>
 </head>
