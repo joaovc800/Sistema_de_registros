@@ -25,15 +25,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style2.css">
     <title>Log in | UNINOVE</title>
-    <style>
-       .img{
-	    margin-top: 15%;
-       }
-    </style>
 </head>
 <body style="background-color: #ffffff;"class="text-center mt-5">
     <div class="container">
-        <img class="img" src="images/uni9.png" width="420">
+        <img src="images/uni9.png" width="420">
         <form action="php/login.php" method="POST">
             <div class="container col-md-4">      
                 <div class="mb-3">
