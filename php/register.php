@@ -2,7 +2,7 @@
 session_start();
 include("conexao.php");
 
-if(empty($_POST["nome_req"]) || empty($_POST["matricula"]) || empty($_POST["email"]) || empty($_POST["telefone"]) || empty($_POST["assunto"]) || empty($_POST["resolucao"]) || $_POST['status'] == 'Status'){
+if(empty($_POST["nome_req"]) || empty($_POST["matricula"]) || empty($_POST["email"]) || empty($_POST["telefone"]) || empty($_POST["assunto"]) || empty($_POST["resolucao"]) || empty($_POST['status')){
     $_SESSION["campos_vazios"] = true;
     header("Location: ../registrar.php");
     exit();
