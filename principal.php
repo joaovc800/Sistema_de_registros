@@ -20,10 +20,6 @@
             #sidebar,#sidebarCollapse{
             visibility: hidden;
             }
-            .name{
-                position: relative;
-                right: 33%;
-            }
         }
 	    #sidebar .dropdown-item:hover{
         background-color: rgba(0, 59, 250, .50) !important;
@@ -70,6 +66,34 @@
     </style>
 </head>
 <body>
+<?php
+    if($_SESSION["bem_vindo"]){
+    ?>
+    <div class="blr3">
+      <div class="modal-dialog modal-md  modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body py-0">
+            <div class="d-block main-content">
+              <img src="images/home.png" alt="Image" class="img-fluid">
+              <div class="content-text p-4">
+                
+                <h3 class="mb-2">Bem vindo!</h3>
+                <p class="mb-4"><?php echo $_SESSION["nome"]?></p>
+                <div class="d-flex">
+                  <div class="ml-auto">
+                    <a href="principal.php" class="btn btn-primary px-4">Ok</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <?php
+    unset($_SESSION["bem_vindo"]);
+    }else{
+    ?>
     <main>
     <div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active h-100 fixed-top">
@@ -126,9 +150,6 @@
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
             </button>
-            <ul class="name nav navbar-nav ml-auto">
-              <li class="ml-5 text-dark">Bem vindo <br><?php echo $_SESSION["nome"]?></li>
-            </ul>
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
@@ -183,14 +204,16 @@
           <div class="col-md-6">
             <img class="blr"src="images/home.png" width="150%" alt="pessoa com notebook">
           </div>
-        </div>
+        </div> 
       </div>
-    </div>
+    </div>  
     </main>
     <div class="overlay">
         <div class="loader"></div>
     </div>
-
+    <?php
+    }
+    ?>
     <script>
         const overlay = document.querySelector(".overlay");
         window.addEventListener("load", function () {
