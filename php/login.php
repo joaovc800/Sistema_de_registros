@@ -24,6 +24,7 @@ while($coluna = mysqli_fetch_array($resultado)){ // Enquanto houver dados ficar�
 if($row == 1){
     $_SESSION['usuario'] = $usuario; //autenticado armazena a sessão na variavel usuario
     $_SESSION["nome"] = $nome;
+    $_SESSION["bem_vindo"] = true;
     header('Location: ../principal.php'); //leva para pagina desejada
     exit(); // fecha os cabeçalhos
 }
