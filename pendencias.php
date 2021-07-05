@@ -20,10 +20,6 @@
             #sidebar,#sidebarCollapse{
             visibility: hidden;
             }
-            .name{
-                position: relative;
-                right: 33%;
-            }
         }
 	    #sidebar .dropdown-item:hover{
         background-color: rgba(0, 59, 250, .50) !important;
@@ -92,10 +88,7 @@
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
-            </button>
-            <ul class="name nav navbar-nav ml-auto">
-              <li class="ml-5 text-dark">Bem vindo <br><?php echo $_SESSION["nome"]?></li>
-            </ul>
+            </button>>
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
