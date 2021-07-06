@@ -78,7 +78,7 @@
               <div class="content-text p-4">
                 
                 <h3 class="mb-2">Bem vindo!</h3>
-                <p class="mb-4"><?php echo $_SESSION["nome"]?></p>
+                <p class="h5 mb-4"><?php echo $_SESSION["nome"]?></p>
                 <div class="d-flex">
                   <div class="ml-auto">
                     <a href="principal.php" class="btn btn-primary px-4">Ok</a>
