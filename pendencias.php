@@ -30,15 +30,6 @@
           left: 5px;
           padding: 0;
         }
-	#sidebar{
-          height: 100vh;
-          overflow-y:scroll;
-          -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  
-        }
-        #sidebar::-webkit-scrollbar{
-         display: none;
-        }
 
     </style>
   </head>
