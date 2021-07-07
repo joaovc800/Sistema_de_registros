@@ -24,6 +24,16 @@
 	    #sidebar .dropdown-item:hover{
         background-color: rgba(0, 59, 250, .50) !important;
         }
+	    #sidebar{
+          height: 100vh;
+          overflow-y:scroll;
+          -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  
+        }
+        #sidebar::-webkit-scrollbar{
+         display: none;
+        }
+	    
         .overlay {
         position: fixed;
         top: 0;
