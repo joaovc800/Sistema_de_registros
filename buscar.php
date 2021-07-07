@@ -24,10 +24,7 @@
 	    #sidebar .dropdown-item:hover{
         background-color: rgba(0, 59, 250, .50) !important;
         }
-	    #sidebar{
-          height: 100vh;
-          overflow:scroll;
-        }
+
         #sidebar::-webkit-scrollbar{
          display: none;
         }
