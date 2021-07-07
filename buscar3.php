@@ -181,7 +181,7 @@
                     <li class="text-dark">Matrícula/RA: <?php echo"<b>".$mat."</b>"?></li>
                     <li class="text-dark">E-mail: <?php echo"<b>".$email."</b>"?></li>
                     <li class="text-dark">Telefone: <?php echo"<b>".$tel."</b>"?></li>
-                    <li class="text-dark">Assunto: <?php echo"<b>".$assunto."</b>"?></li>
+                    <li class="text-dark">Assunto: <?php echo"<b>".$assunt."</b>"?></li>
                     <li class="text-dark">Data: <?php echo"<b>".$data.' as '.$hora."</b>"?></li>
                     <li class="text-dark h6 mt-2">Resolução</li>
                     <div class="card mt-2">
