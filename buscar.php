@@ -26,9 +26,7 @@
         }
 	    #sidebar{
           height: 100vh;
-          overflow-y:scroll;
-          -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  
+          overflow:scroll;
         }
         #sidebar::-webkit-scrollbar{
          display: none;
