@@ -24,10 +24,6 @@
 	    #sidebar .dropdown-item:hover{
         background-color: rgba(0, 59, 250, .50) !important;
         }
-
-        #sidebar::-webkit-scrollbar{
-         display: none;
-        }
     </style>
   </head>
   <body>
