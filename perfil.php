@@ -67,7 +67,7 @@
 
         <div class="footer fixed-bottom">
         	<p class="copy">
-					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
+					  Wit Solutions &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
@@ -143,7 +143,7 @@
                     <input type="text" class="form-control" readonly value="<?php echo $email?>">
                 </div>
                 <div class="col-12 mt-2">
-                    <label>Sessão Service Desk</label>
+                    <label>Cargo</label>
                     <input type="text" class="form-control" readonly value="<?php echo $cargo?>">
                 </div>
                 <div class="col-12 mt-2">
