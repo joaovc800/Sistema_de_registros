@@ -111,12 +111,6 @@
                     <a class="nav-link" href="perfil.php">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://os.uninove.br/os/" target="_blank">O.S</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://portalsd.uninove.br/" target="_blank">Portal SD</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="php/logout.php">Sair</a>
                 </li>
               </ul>
