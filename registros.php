@@ -55,9 +55,6 @@
             <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
           </li>
           <li>
-            <a href="http://portalsd.uninove.br/" target="_blank"><span class="fas fa-door-open"></span>Portal SD</a>
-          </li>
-          <li>
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
           </li>
         </ul>
