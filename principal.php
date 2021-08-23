@@ -187,8 +187,8 @@
         <div class="row">
           <div class="col-md-6">
             <h2 class="blr2 mb-4">Uninove</h2>
-            <p class="blr2">Bem vindo ao Registro SD</p>
-            <p class="blr2">Este sistema foi desenvolvido para facilitar a resolução de problemas apresentado</p>
+            <p class="blr2">Bem vindo ao Sistema de Registros</p>
+            <p class="blr2">Este sistema foi desenvolvido para facilitar a resolução de problemas apresentados pelos usuários.</p>
           </div>
           <div class="col-md-6">
             <img class="blr"src="images/home.png" width="150%" alt="pessoa com notebook">
