@@ -124,12 +124,6 @@
             <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
           </li>
           <li>
-            <a href="http://os.uninove.br/os/" target="_blank"><span class="fas fa-cogs"></span>O.S</a>
-          </li>
-          <li>
-            <a href="http://portalsd.uninove.br/" target="_blank"><span class="fas fa-door-open"></span>Portal SD</a>
-          </li>
-          <li>
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
           </li>
         </ul>
@@ -184,12 +178,6 @@
                     <a class="nav-link" href="perfil.php">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://os.uninove.br/os/" target="_blank">O.S</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://portalsd.uninove.br/" target="_blank">Portal SD</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="php/logout.php">Sair</a>
                 </li>
               </ul>
@@ -199,8 +187,8 @@
         <div class="row">
           <div class="col-md-6">
             <h2 class="blr2 mb-4">Uninove</h2>
-            <p class="blr2">Bem vindo ao Registro SD...</p>
-            <p class="blr2">Sistema desenvolvido para facilitar o registros de atendimento na uninove</p>
+            <p class="blr2">Bem vindo ao Registro SD</p>
+            <p class="blr2">Este sistema foi desenvolvido para facilitar a resolução de problemas apresentado</p>
           </div>
           <div class="col-md-6">
             <img class="blr"src="images/home.png" width="150%" alt="pessoa com notebook">
