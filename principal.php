@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Registro SD | UNINOVE</title>
+    <title>Registro SD WIT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -98,7 +98,7 @@
     <main>
     <div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active h-100 fixed-top">
-            <h3 class="text-center"><a href="principal.php" class="logo">Uni9</a></h3>
+            <a href="principal.php" class="logo"><img src="images/logo-icone.png" width="77px"></a>
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
