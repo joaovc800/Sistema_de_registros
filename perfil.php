@@ -61,7 +61,7 @@
 
         <div class="footer fixed-bottom">
         	<p class="copy">
-					  Wit Solutions &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
+					  WIT solutions | Dev 2021 ©;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
