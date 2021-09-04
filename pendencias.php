@@ -136,11 +136,7 @@
         </nav>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <?php	
-		if($_SESSION['pendente']){
-		?>
-		<div class="card bg-success"><p class="text-center text-light">Não há registros pendentes</p></div>	
-		<php
-        }else{
+	
                 $query = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM registros WHERE status = 'Pendente'";
                 $resultado = mysqli_query($conexao, $query);
                 $row = mysqli_num_rows($resultado);
@@ -222,7 +218,6 @@
                     </div>
                     <?php
                     }
-                    
                   ?>
                     </div>
                     </div>
@@ -250,9 +245,12 @@
             <hr class="w-100">
             <?php
             }
-        
-        unset($_SESSION['pendente']);
+        }else{
             ?>
+            <div class="card bg-success"><p class="text-center text-light">Não há registros pendentes</p></div>	
+            <?php
+        }
+        ?>
       </div>
 </div> 
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
