@@ -31,9 +31,6 @@ nav.sli ul li ul {
     background-color: #f8f9fa;
 }
 
-#sidebar{
-    backgound-color: rgba(28, 65, 83, 255);
-}
 
 }
 #sidebar ul li {
@@ -49,6 +46,13 @@ nav.sli ul li ul {
     outline-color: rgba(71, 126, 232, 0);
     outline-offset: 20px;
     background-color: rgb(235,141,5);
+}
+
+#sidebar ul li #logo:hover {
+    color: rgb(235,141,5);
+    outline: 10px solid;
+    outline-color: rgba(71, 126, 232, 0);
+    outline-offset: 20px;
 }
 
 #sidebar ul li ul {
