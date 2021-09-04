@@ -45,7 +45,7 @@
                         <div class="d-md-flex">
                             <div class="col-md-6 bg p-lg-5 text-center d-flex align-items-center order-md-last">
                                 <div class="container">
-                                    <img width="80%" src="images/uni9.png">
+                                    <img width="80%" src="images/logo.jpeg">
                                 </div>
                             </div>
                         <div class="col-md-6 bg-light p-lg-5">
