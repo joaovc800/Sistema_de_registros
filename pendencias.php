@@ -71,7 +71,7 @@
         </ul>
 
         <div class="footer fixed-bottom">
-        	<p class="copy">
+        	<p class="copy mx-2">
 					  WIT solutions | Dev &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
