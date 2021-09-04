@@ -1,9 +1,9 @@
 <?php
 
 $hostname= $_ENV["URL"];
-$user = "b4b78724dfa36d";
-$password = "55c1e22b";
-$db = "heroku_a166eef70043d0b";
+$user = $_ENV["USER"];
+$password = $_ENV["PASS"];
+$db = $_ENV["DB"];
 
 $conexao = mysqli_connect($hostname,$user,$password,$db) or die ("Não foi possivel conectar ao banco".mysqli_error($conexao));
 
