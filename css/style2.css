@@ -31,32 +31,37 @@ nav.sli ul li ul {
     background-color: #f8f9fa;
 }
 
+#sidebar{
+    backgound-color: rgba(28, 65, 83, 255);
+}
+
+}
 #sidebar ul li {
     cursor: pointer;
     outline: 0px solid;
-    outline-color: rgba(28, 65, 83, 255);
+    outline-color: rgb(235,141,5);
     transition: ease 500ms cubic-bezier(0.2, 0, 0, 0.8);
 }
 
 #sidebar ul li:hover {
-    color: rgba(28, 65, 83, 255);
+    color: rgb(235,141,5);
     outline: 10px solid;
     outline-color: rgba(71, 126, 232, 0);
     outline-offset: 20px;
-    background-color: rgba(28, 65, 83, 255);
+    background-color: rgb(235,141,5);
 }
 
 #sidebar ul li ul {
     color: #fff;
     cursor: pointer;
     outline: 0 solid;
-    outline-color: rgba(28, 65, 83, 255);
+    outline-color: rgb(235,141,5);
     transition: all 500ms cubic-bezier(0.2, 0, 0, 0.8);
-    background-color: rgba(28, 65, 83, 255);
+    background-color: rgb(235,141,5);
 }
 
 #sidebar ul li ul li:hover {
-    color: rgba(28, 65, 83, 255);
+    color: rgb(235,141,5);
     outline: 10px solid;
     outline-color: rgba(71, 126, 232, 0);
     outline-offset: 20px;
@@ -97,7 +102,7 @@ nav.sli ul li a:before {
 }
 
 nav.sli ul li a:hover {
-    color: rgba(28, 65, 83, 255);
+    color: rgb(235,141,5);
 }
 
 
@@ -117,7 +122,7 @@ nav.sli ul li a:after {
     width: 0%;
     content: '.';
     color: transparent;
-    background: rgba(28, 65, 83, 255);
+    background: rgb(235,141,5);
     height: 3px;
 }
 
@@ -141,7 +146,7 @@ nav.sli ul li a:hover:after {
         transition: all .5s;
     }
     nav.sli ul li a:hover {
-        color: rgba(28, 65, 83, 255);
+        color: rgb(235,141,5);
     }
     nav.sli ul li a,
     nav.fill ul li a {
@@ -156,7 +161,7 @@ nav.sli ul li a:hover:after {
         width: 0%;
         content: '.';
         color: transparent;
-        background: rgba(28, 65, 83, 255);
+        background: rgb(235,141,5);
         height: 3px;
     }
     nav.sli ul li a:hover:after {
