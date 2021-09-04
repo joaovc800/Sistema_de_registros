@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Registro SD WIT</title>
+    <title>Registro WIT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -185,9 +185,9 @@
         </nav>
         <div class="row">
           <div class="col-md-6">
-            <h2 class="blr2 mb-4">Uninove</h2>
+            <h2 class="blr2 mb-4">Wit Solutions</h2>
             <p class="blr2">Bem vindo ao Sistema de Registros</p>
-            <p class="blr2">Este sistema foi desenvolvido para facilitar a resolução de problemas apresentados pelos usuários.</p>
+            <p class="blr2">Este sistema foi desenvolvido pelo time Wit Solutions para facilitar a resolução de problemas apresentados pelos usuários.</p>
           </div>
           <div class="col-md-6">
             <img class="blr"src="images/home.png" width="150%" alt="pessoa com notebook">
