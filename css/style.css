@@ -11019,7 +11019,7 @@ h5,
 #sidebar {
     min-width: 270px;
     max-width: 270px;
-    background: #003b96;
+    background: rgba(28, 65, 83, 255);
     color: #fff;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
