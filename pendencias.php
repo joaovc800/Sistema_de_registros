@@ -62,25 +62,23 @@
             <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
           </li>
           <li>
-            <a href="http://os.uninove.br/os/" target="_blank"><span class="fas fa-cogs"></span>O.S</a>
-          </li>
-          <li>
-            <a href="http://portalsd.uninove.br/" target="_blank"><span class="fas fa-door-open"></span>Portal SD</a>
-          </li>
-          <li>
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
           </li>
         </ul>
+
         <div class="footer fixed-bottom">
         	<p class="copy">
-					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
+					 WIT solutions | Dev © <i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
+
         <!-- Page Content  -->
      <div id="content" class="container w-75 col-md-8 p-2 p-md-5">
+
         <nav class="sli navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
+
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
@@ -118,12 +116,6 @@
                     <a class="nav-link" href="perfil.php">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://os.uninove.br/os/" target="_blank">O.S</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://portalsd.uninove.br/" target="_blank">Portal SD</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="php/logout.php">Sair</a>
                 </li>
               </ul>
@@ -155,7 +147,7 @@
                         <p class="my-0 fw-normal text-light">Registro Pendente</p>
                      </div>
                 <div class="card-body">
-                  <h5 class="card-title text-center pricing-card-title">
+                  <h5 class="card-title pricing-card-title">
                   <small>Criado por: <?php echo"<b>".$resp."</b>"?></small>
                   </h5>
                     <div class="row">
@@ -197,7 +189,7 @@
                     <!-- divisão -->
                     <div class="col-md-12">
                       <div class="card mt-2">
-                        <p class="text-center text-dark p-2">Registrado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></p>
+                        <p class="text-dark p-2">Registrado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></p>
                       </div>
                       <?php
                       $query2 = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM updates WHERE n_registro = '$id'";
@@ -209,7 +201,7 @@
                         $hora = $coluna2['hora_formatada'];
                     ?>
                     <div class="card mt-2">
-                      <p class="text-center text-dark">Atualizado por: <?php echo "<b>".$respAlt."</b> em $data as $hora"."<br><br>".$atualizacao?></p>
+                      <p class="text-dark">Atualizado por: <?php echo "<b>".$respAlt."</b> em $data as $hora"."<br><br>".$atualizacao?></p>
                     </div>
                     <?php
                     }
@@ -222,7 +214,7 @@
                         <div class="container col-md-12">
                         <p>Incluir Observações</p>
                             <div class="form-floating" id="textArea">
-                                <textarea name="res" id="texto" class="form-control text-center form-control-sm mt-2" id="floatingTextarea2" style="height: 100px" maxlength="400"></textarea><label for="floatingTextarea2">Resolução</label>
+                                <textarea name="res" id="texto" class="form-control form-control-sm mt-2" id="floatingTextarea2" style="height: 100px" maxlength="400"></textarea><label for="floatingTextarea2">Resolução</label>
                             </div>
                             <select id="select" name="status" class="form-select form-control-sm mt-2">
                                 <option name="status" value="Pendente"><?php echo $status?></option>
@@ -236,13 +228,13 @@
                     </div>
                 </div>    
               </div>
-            </div>
+            </div>  
+            <hr class="w-100">
             <?php
             }
         }
             ?>
       </div>
-</div>
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
