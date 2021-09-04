@@ -42,6 +42,9 @@
 			<nav id="sidebar" class="active h-100 fixed-top">
             
         <ul class="list-unstyled components mb-5">
+		<li>
+                      <img class="w-100"src="images/logo.jpeg">
+                     </li>
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
           </li>
