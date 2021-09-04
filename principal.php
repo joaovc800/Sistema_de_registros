@@ -101,7 +101,7 @@
 				
 				
         <ul class="list-unstyled components mb-5">
-		<li>
+		<li id="logo">
 					   <a href="principal.php"><img class="w-100"src="images/logo.jpeg"></a>
 					 </li>
           <li class="active">
