@@ -98,13 +98,12 @@
     <main>
     <div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active h-100 fixed-top">
-				<ul class="list-unstyled components mb-5">
-					<li>
-					   <a href="principal.php"><img src="images/logo.jpeg" width="10%"></a>
-					 </li>
-				</ul>
+				
 				
         <ul class="list-unstyled components mb-5">
+		<li>
+					   <a href="principal.php"><img src="images/logo.jpeg" width="30%"></a>
+					 </li>
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
           </li>
