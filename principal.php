@@ -100,7 +100,7 @@
 			<nav id="sidebar" class="active h-100 fixed-top">
 				<ul class="list-unstyled components mb-5">
 					<li>
-					   <a href="principal.php"><img src="images/logo.jpeg"></a>
+					   <a href="principal.php"><img src="images/logo.jpeg" width="10%"></a>
 					 </li>
 				</ul>
 				
