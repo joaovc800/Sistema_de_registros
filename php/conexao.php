@@ -1,6 +1,6 @@
 <?php
 
-$hostname="us-cdbr-east-04.cleardb.com";
+$hostname= $CLEARDB_DATABASE_URL;
 $user = "b4b78724dfa36d";
 $password = "55c1e22b";
 $db = "heroku_a166eef70043d0b";
