@@ -261,8 +261,6 @@
                     </div>
                 </div>
             </div>
-
-            <hr class="w-100">
             <?php
             }
         }
