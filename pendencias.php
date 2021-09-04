@@ -66,19 +66,13 @@
             <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
           </li>
           <li>
-            <a href="http://os.uninove.br/os/" target="_blank"><span class="fas fa-cogs"></span>O.S</a>
-          </li>
-          <li>
-            <a href="http://portalsd.uninove.br/" target="_blank"><span class="fas fa-door-open"></span>Portal SD</a>
-          </li>
-          <li>
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
           </li>
         </ul>
 
         <div class="footer fixed-bottom">
         	<p class="copy">
-					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
+					  WIT solutions | Dev &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
@@ -127,12 +121,6 @@
                   </ul>
                 <li class="nav-item">
                     <a class="nav-link" href="perfil.php">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://os.uninove.br/os/" target="_blank">O.S</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://portalsd.uninove.br/" target="_blank">Portal SD</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="php/logout.php">Sair</a>
