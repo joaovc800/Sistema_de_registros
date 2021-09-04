@@ -48,7 +48,7 @@ nav.sli ul li ul {
     background-color: rgb(235,141,5);
 }
 
-#sidebar ul li#logo:hover {
+#sidebar ul li a#logo:hover {
     color: rgb(235,141,5);
     outline: 10px solid;
     outline-color: rgba(71, 126, 232, 0);
