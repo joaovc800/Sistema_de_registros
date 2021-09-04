@@ -228,15 +228,14 @@
                     </div>
                 </div>    
               </div>
-            </div>  
+            </div> 
+		</div>
             <hr class="w-100">
             <?php
             }
         }
             ?>
       </div>
-</div>
-</div>
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
