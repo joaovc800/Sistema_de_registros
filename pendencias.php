@@ -197,7 +197,7 @@
                     <!-- divisão -->
                     <div class="col-md-12">
                       <div class="card mt-2">
-                        <p class="text-dark p-2">Registrado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></p>
+                        <p class="text-center text-dark p-2">Registrado por: <?php echo "<b>".$resp."</b> em $data as $hora"."<br><br>".$res?></p>
                       </div>
                       <?php
                       $query2 = "SELECT *,TIME_FORMAT(hora, '%H:%i')as hora_formatada,DATE_FORMAT(data, '%d/%m/%Y') as data_formatada FROM updates WHERE n_registro = '$id'";
@@ -209,7 +209,7 @@
                         $hora = $coluna2['hora_formatada'];
                     ?>
                     <div class="card mt-2">
-                      <p class="text-dark">Atualizado por: <?php echo "<b>".$respAlt."</b> em $data as $hora"."<br><br>".$atualizacao?></p>
+                      <p class="text-center text-dark">Atualizado por: <?php echo "<b>".$respAlt."</b> em $data as $hora"."<br><br>".$atualizacao?></p>
                     </div>
                     <?php
                     }
@@ -222,7 +222,7 @@
                         <div class="container col-md-12">
                         <p>Incluir Observações</p>
                             <div class="form-floating" id="textArea">
-                                <textarea name="res" id="texto" class="form-control form-control-sm mt-2" id="floatingTextarea2" style="height: 100px" maxlength="400"></textarea><label for="floatingTextarea2">Resolução</label>
+                                <textarea name="res" id="texto" class="form-control text-center form-control-sm mt-2" id="floatingTextarea2" style="height: 100px" maxlength="400"></textarea><label for="floatingTextarea2">Resolução</label>
                             </div>
                             <select id="select" name="status" class="form-select form-control-sm mt-2">
                                 <option name="status" value="Pendente"><?php echo $status?></option>
@@ -236,8 +236,7 @@
                     </div>
                 </div>    
               </div>
-            </div>  
-            <hr class="w-100">
+            </div>
             <?php
             }
         }
