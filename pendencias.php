@@ -30,9 +30,28 @@
           left: 5px;
           padding: 0;
         }
+	#sidebar{
+          height: 100vh;
+          overflow-y:scroll;
+          -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  
+        }
+        #sidebar::-webkit-scrollbar{
+         display: none;
+        }
 
     </style>
   </head>
+
+    
+          
+            
+    
+
+          
+    
+    
+  
   <body>
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active h-100 fixed-top">
@@ -71,20 +90,16 @@
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
           </li>
         </ul>
-
         <div class="footer fixed-bottom">
         	<p class="copy">
 					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
-
         <!-- Page Content  -->
      <div id="content" class="container w-75 col-md-8 p-2 p-md-5">
-
         <nav class="sli navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
