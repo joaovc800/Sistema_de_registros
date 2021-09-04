@@ -35,10 +35,8 @@
   </head>
   <body>
 		<div class="wrapper d-flex align-items-stretch">
-		<nav id="sidebar" class="active h-100 fixed-top">
-            		<a href="principal.php" class="logo">
-				<img src="images/logo-icone.png">
-			</a>
+			<nav id="sidebar" class="active h-100 fixed-top">
+            <h3 class="text-center"><a href="principal.php" class="logo">Uni9</a></h3>
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
