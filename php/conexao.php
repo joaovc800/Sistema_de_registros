@@ -1,7 +1,7 @@
 <?php
 
 $hostname= $_ENV["URL"];
-$user = $_ENV["USER"];
+$user = $_ENV["USERDB"];
 $password = $_ENV["PASS"];
 $db = $_ENV["DB"];
 
