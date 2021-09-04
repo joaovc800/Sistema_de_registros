@@ -102,7 +102,7 @@
 				
         <ul class="list-unstyled components mb-5">
 		<li>
-					   <a id="logo" href="principal.php"><img class="w-100"src="images/logo.jpeg"></a>
+					  <img class="w-100"src="images/logo.jpeg">
 					 </li>
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
