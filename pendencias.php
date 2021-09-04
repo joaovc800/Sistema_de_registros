@@ -247,7 +247,9 @@
             }
         }else{
             ?>
-            <div class="card bg-success"><p class="text-center text-light">Não há registros pendentes</p></div>	
+            <div class="w-100 card bg-success">
+		    <p class="text-center text-light">Não há registros pendentes</p>
+	    </div>	
             <?php
         }
         ?>
