@@ -1,9 +1,9 @@
 <?php
 
-$hostname= $_ENV["URL"];
-$user = $_ENV["USERDB"];
-$password = $_ENV["PASS"];
-$db = $_ENV["DB"];
+$hostname= $_ENV["URL"]; // varialvel de ambiente heroku
+$user = $_ENV["USERDB"]; // varialvel de ambiente heroku
+$password = $_ENV["PASS"]; // varialvel de ambiente heroku
+$db = $_ENV["DB"]; // varialvel de ambiente heroku
 
 $conexao = mysqli_connect($hostname,$user,$password,$db) or die ("Não foi possivel conectar ao banco".mysqli_error($conexao));
 
