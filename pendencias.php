@@ -35,8 +35,10 @@
   </head>
   <body>
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar" class="active h-100 fixed-top">
-            <a href="principal.php" class="logo"><img src="images/logo-icone.png" width="77px"></a>
+		<nav id="sidebar" class="active h-100 fixed-top">
+            		<a href="principal.php" class="logo">
+				<img src="images/logo-icone.png">
+			</a>
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
