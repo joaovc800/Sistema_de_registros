@@ -28,7 +28,7 @@
             font-family: 'Krona One', sans-serif;
         }
         .bg{
-            background-image: linear-gradient(65deg,#3858c6,#38c3fe);
+            background-image: linear-gradient(65deg,#1f4053,#1f4053);
         }
     </style>
     </head>
