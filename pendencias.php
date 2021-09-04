@@ -30,32 +30,13 @@
           left: 5px;
           padding: 0;
         }
-	#sidebar{
-          height: 100vh;
-          overflow-y:scroll;
-          -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  
-        }
-        #sidebar::-webkit-scrollbar{
-         display: none;
-        }
 
     </style>
   </head>
-
-    
-          
-            
-    
-
-          
-    
-    
-  
   <body>
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active h-100 fixed-top">
-            <h3 class="text-center"><a href="principal.php" class="logo">Uni9</a></h3>
+            <a href="principal.php" class="logo"><img src="images/logo-icone.png" width="77px"></a>
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="principal.php"><span class="fa fa-home"></span> Home</a>
@@ -81,25 +62,23 @@
             <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
           </li>
           <li>
-            <a href="http://os.uninove.br/os/" target="_blank"><span class="fas fa-cogs"></span>O.S</a>
-          </li>
-          <li>
-            <a href="http://portalsd.uninove.br/" target="_blank"><span class="fas fa-door-open"></span>Portal SD</a>
-          </li>
-          <li>
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
           </li>
         </ul>
+
         <div class="footer fixed-bottom">
         	<p class="copy">
-					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
+					 WIT solutions | Dev © <i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
+
         <!-- Page Content  -->
      <div id="content" class="container w-75 col-md-8 p-2 p-md-5">
+
         <nav class="sli navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
+
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
@@ -135,12 +114,6 @@
                   </ul>
                 <li class="nav-item">
                     <a class="nav-link" href="perfil.php">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://os.uninove.br/os/" target="_blank">O.S</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://portalsd.uninove.br/" target="_blank">Portal SD</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="php/logout.php">Sair</a>
@@ -256,7 +229,7 @@
                 </div>    
               </div>
             </div>  
-            
+            <hr class="w-100">
             <?php
             }
         }
