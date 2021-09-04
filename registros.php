@@ -62,7 +62,7 @@
         </ul>
 
         <div class="footer fixed-bottom">
-        	<p class="copy nx-2">
+        	<p class="copy mx-2">
 					  WIT solutions | Dev © <i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
