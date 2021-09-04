@@ -1,3 +1,3 @@
-# Sistema_de_registros
+# Sistema De Registros
 
 ESCREVER ALGO AQUI
