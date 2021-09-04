@@ -8,7 +8,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-  	<title>Pendentes | UNINOVE</title>
+  	<title>Pendentes | Wit Solutions</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -92,9 +92,6 @@
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
             </button>
-            <ul class="name nav navbar-nav ml-auto">
-              <li class="ml-5 text-dark">Bem vindo <br><?php echo $_SESSION["nome"]?></li>
-            </ul>
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
