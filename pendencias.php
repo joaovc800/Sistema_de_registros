@@ -71,20 +71,16 @@
             <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
           </li>
         </ul>
-
         <div class="footer fixed-bottom">
         	<p class="copy">
 					  Service Desk | Uninove &copy;<i class="icon-heart" aria-hidden="true"></i><script>document.write(new Date().getFullYear());</script> 
 					</p>
         </div>
     	</nav>
-
         <!-- Page Content  -->
      <div id="content" class="container w-75 col-md-8 p-2 p-md-5">
-
         <nav class="sli navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
@@ -159,7 +155,7 @@
                         <p class="my-0 fw-normal text-light">Registro Pendente</p>
                      </div>
                 <div class="card-body">
-                  <h5 class="card-title pricing-card-title">
+                  <h5 class="card-title text-center pricing-card-title">
                   <small>Criado por: <?php echo"<b>".$resp."</b>"?></small>
                   </h5>
                     <div class="row">
@@ -247,6 +243,7 @@
         }
             ?>
       </div>
+</div>
     <script src="https://kit.fontawesome.com/5a9643203d.js" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
