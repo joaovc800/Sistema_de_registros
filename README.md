@@ -14,6 +14,5 @@ Bem vindos a nossa documentação do sistema de registros aqui iremos falar um p
 ## Vamos Mostrar um pouco sobre o sistema
 
 1. Tela de login:
-```
 ![Login]('images/login.png')
-```
+
