@@ -14,5 +14,5 @@ Bem vindos a nossa documentação do sistema de registros aqui iremos falar um p
 ## Vamos Mostrar um pouco sobre o sistema
 
 1. Tela de login:
-![Login]('https://github.com/joaovc800/Sistema_de_registros/blob/main/images/login.png')
+![Login](https://github.com/joaovc800/Sistema_de_registros/blob/main/images/login.png?raw=true)
 
