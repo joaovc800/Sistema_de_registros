@@ -57,5 +57,17 @@ Na Home temos alguns elementos base que todas as páginas terão:
 > Os itens acima são fixos para todas as páginas porém quando o sistema chega da responsividade para celular a side bar é ocultada para melhor visibilidade.
 
 ___
+4. Tela de inserir registro:
 
+<img height="300" src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/registrar.png?raw=true">
+
+Aqui iremos fazer o registos dos casos coletando os dados do mesmo, definindo um status de **"concluído"** ou **"pendente"**
+
+> Se caso o registro for pendente ele ficará em aberto em uma página separada e especifica para para isso, já iremos fazer dela.
+
+> Depois que a inserção foi feita com os dados incluindo que inseriu com dados da sessão do usuário ele irá mostrar na pagina de registos odos os dados da inserção e de quem quem criou o registro e se alguém atualizou o mesmo registro.
+
+---
+
+continuar colocando os dados da página *registro de hoje*
 
