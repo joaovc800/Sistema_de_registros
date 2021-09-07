@@ -41,7 +41,7 @@ ___
 
 3. Home
 
-<img height="300" src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/home.png?raw=true">
+<img height="300" src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/homeimg.png?raw=true">
 
 Aqui temos nossa **home page** uma página de apresentação e uma breve introdução do sistema
 
@@ -55,3 +55,7 @@ Na Home temos alguns elementos base que todas as páginas terão:
 * Roda pé do menu lateral
 
 > Os itens acima são fixos para todas as páginas porém quando o sistema chega da responsividade para celular a side bar é ocultada para melhor visibilidade.
+
+___
+
+
