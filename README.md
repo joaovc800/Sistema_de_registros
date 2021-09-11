@@ -69,5 +69,70 @@ Aqui iremos fazer o registos dos casos coletando os dados do mesmo, definindo um
 
 ---
 
-continuar colocando os dados da página *registro de hoje*
+5. Tela de visualização de registros
+<img src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/registros_de_hoje.png?raw=true" alt="Registros">
+
+A tela de registros irá mostrar apenas os registros incluídos na data atual para evitar que seja buscados muitos registros na mesma tela.
+Aqui nesta página aparece:
+>Informações do requisitante do caso;
+>Dados para contato;
+>Resolução do caso e o que foi tratado;
+>Status (pendente ou concluído);
+
+___
+
+6. Tela de casos pendentes
+<img src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/pendentes.png?raw=true" alt="Pendentes">
+
+A aba de pendentes mostra todos os casos que ainda não foram resolvidos então aqui iremos tratar esses registros conforme o andar da situação.
+
+>Podemos fazer atualizações de status;
+>Incluir mais registros caso necessário;
+>Se concluirmos o mesmo será removido desta para não ocupar espaço;
+
+___
+
+7. Tela de Busca 
+<img src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/buscar.png?raw=true" alt="Buscas">
+
+Nesta tela temos três tipos de buscas:
+> 1. Buscar por data;
+> 2. Buscar por matricula ou RA;
+> 3. Buscar por assunto
+> ````
+> Obs: a buscar por assunto, não precisa colocar o nome completo, basta apenas colocar uma parte da palavra.
+> ````
+
+As buscas trazem o mesmo tipo de informação como na imagem acima.
+
+___
+8. Perfil
+
+<img src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/perfil.png?raw=true" alt="perfil">
+
+No perfil iremos mostrar alguma informações básicas sobre o usuário assim como temos na imagem acima.
+As informações do perfil são mudadas dinamicamente de acordo com o usuário.
+
+
+
+# Alterar a senha
+
+O procedimento de alteração de senha é bem simples basta apenas digitar a nova senha e repeti-la sem erro e a senha será alterada.
+
+Por trás desse procedimento foi também aplicado uma criptografia para quando o usuário for alterar a senha ela ir **encriptada** para banco armazenar e ter a senha gravada com mais segurança.
+
+# Logoff
+
+No ato de logoff no php é destruídas todas as sessões ativas e direcionamos o usuário via cabeçalho à index para fazer o login.
+>Caso o usuário tente voltar para página via url sem estar com a sessão ativa o sistema irá bloquear a requisição até ele fazer o login.
+
+
+## Hospedagem
+
+Conforme havíamos falado o site está hospedado na heroku, segue o link abaixo
+
+>[Site do time Wit](https://uni9.herokuapp.com/index.php)
+>Usuário e senha apenas para membros do time
+>Ou professores para teste que será enviado por e-mail
+
 
