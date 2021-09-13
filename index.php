@@ -13,7 +13,7 @@ session_start();
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style2.css">
-  <title>Log in | UNINOVE</title>
+  <title>Log in | Wit Solutions</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap&family=Krona+One&display=swap');
 
