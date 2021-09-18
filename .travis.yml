@@ -1,7 +1,4 @@
 sudo: required
-env:
-  global:
-    - HEROKU_CURL_B=$HEROKU_CURL_B
 services:
   - docker
 before_install:
