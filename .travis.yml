@@ -1,0 +1,29 @@
+sudo: required
+env:
+  global:
+    - HEROKU_CURL_B=$HEROKU_CURL_B
+services:
+  - docker
+before_install:
+  - wget -qO- https://toolbelt.heroku.com/install.sh | sh
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$HEROKU_PASSWORD" | docker login -u "$HEROKU_USERNAME" --password-stdin registry.heroku.com
+script:
+    # Server
+  - docker build -t $DOCKER_USERNAME/docker_client ./client;
+  - docker tag $DOCKER_USERNAME/docker_client registry.heroku.com/$HEROKU_CLIENT/web;
+    # Nginx
+  - docker build -t $DOCKER_USERNAME/docker_nginx ./nginx;
+  - docker tag $DOCKER_USERNAME/docker_nginx registry.heroku.com/$HEROKU_NGINX/web;
+deploy:
+  provider: script
+  script: 
+    docker push $DOCKER_USERNAME/docker_client;
+    docker push registry.heroku.com/$HEROKU_CLIENT/web; 
+    heroku container:release web --app $HEROKU_CLIENT; 
+
+    docker push $DOCKER_USERNAME/docker_nginx; 
+    docker push registry.heroku.com/$HEROKU_NGINX/web;
+    heroku container:release web --app $HEROKU_NGINX;
+  on:
+    branch: nginx
