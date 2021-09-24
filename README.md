@@ -23,7 +23,7 @@ Bem vindos a nossa documentação do sistema de registros aqui iremos falar um p
 <img height="300" src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/login.png?raw=true">
 
 O login é bem simples e não tem segredo, basta apenas inserir o usuário e a senha de acesso e será redirecionado para **home page**.
-Como o sistema foi desenvolvido para usar em empresa e não ao público apenas que pode acessar são o usuários que criamos no banco de dados com um e-mail de domínio.
+Como o sistema foi desenvolvido para usar em empresa e não ao público apenas quem pode acessar são o usuários que criamos no banco de dados com um e-mail de domínio.
 
 > * A senha foi protegida e criptografada para termos mais segurança 
 > * Usamos algumas sequências de escape para evitarmos a vulnerabilidade com temido **SQL Injection**.
@@ -63,9 +63,9 @@ ___
 
 Aqui iremos fazer o registos dos casos coletando os dados do mesmo, definindo um status de **"concluído"** ou **"pendente"**
 
-> Se caso o registro for pendente ele ficará em aberto em uma página separada e especifica para para isso, já iremos fazer dela.
+> Se caso o registro for pendente ele ficará em aberto em uma página separada e especifica  para isso.
 
-> Depois que a inserção foi feita com os dados incluindo que inseriu com dados da sessão do usuário ele irá mostrar na pagina de registos odos os dados da inserção e de quem quem criou o registro e se alguém atualizou o mesmo registro.
+> Depois que a inserção foi feita com os dados incluindo que inseriu com dados da sessão do usuário ele irá mostrar na pagina de registos todos os dados da inserção e de quem  criou o registro e se alguém atualizou o mesmo.
 
 ---
 
@@ -84,7 +84,7 @@ ___
 6. Tela de casos pendentes
 <img src="https://github.com/joaovc800/Sistema_de_registros/blob/main/images/pendentes.png?raw=true" alt="Pendentes">
 
-A aba de pendentes mostra todos os casos que ainda não foram resolvidos então aqui iremos tratar esses registros conforme o andar da situação.
+A aba de pendentes mostra todos os casos que ainda não foram resolvidos, então aqui iremos tratar esses registros conforme a demanda.
 
 >Podemos fazer atualizações de status;
 >Incluir mais registros caso necessário;
@@ -119,7 +119,7 @@ As informações do perfil são mudadas dinamicamente de acordo com o usuário.
 
 O procedimento de alteração de senha é bem simples basta apenas digitar a nova senha e repeti-la sem erro e a senha será alterada.
 
-Por trás desse procedimento foi também aplicado uma criptografia para quando o usuário for alterar a senha ela ir **encriptada** para banco armazenar e ter a senha gravada com mais segurança.
+Por trás desse procedimento foi também aplicado uma criptografia para quando o usuário for alterar a senha ela ir **encriptada** para o banco armazenar e ter a senha gravada com mais segurança.
 
 # Logoff
 
