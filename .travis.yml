@@ -1,26 +1,19 @@
 sudo: required
 services:
-  - docker
+- docker
 before_install:
-  - wget -qO- https://toolbelt.heroku.com/install.sh | sh
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - echo "$HEROKU_PASSWORD" | docker login -u "$HEROKU_USERNAME" --password-stdin registry.heroku.com
+- wget -qO- https://toolbelt.heroku.com/install.sh | sh
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+- echo "$HEROKU_PASSWORD" | docker login -u "$HEROKU_USERNAME" --password-stdin registry.heroku.com
 script:
-    # Server
-  - docker build -t $DOCKER_USERNAME/docker_client ./client;
-  - docker tag $DOCKER_USERNAME/docker_client registry.heroku.com/$HEROKU_CLIENT/web;
-    # Nginx
-  - docker build -t $DOCKER_USERNAME/docker_nginx ./nginx;
-  - docker tag $DOCKER_USERNAME/docker_nginx registry.heroku.com/$HEROKU_NGINX/web;
+- docker build -t $DOCKER_USERNAME/docker_client ./cliente-servidor/apache-server;
+- docker tag $DOCKER_USERNAME/docker_client registry.heroku.com/$HEROKU_CLIENT/web;
 deploy:
   provider: script
-  script: 
-    docker push $DOCKER_USERNAME/docker_client;
-    docker push registry.heroku.com/$HEROKU_CLIENT/web; 
-    heroku container:release web --app $HEROKU_CLIENT; 
-
-    docker push $DOCKER_USERNAME/docker_nginx; 
-    docker push registry.heroku.com/$HEROKU_NGINX/web;
-    heroku container:release web --app $HEROKU_NGINX;
+  script:
+    docker push $DOCKER_USERNAME/docker_client; docker push registry.heroku.com/$HEROKU_CLIENT/web;
+    heroku container:release web --app $HEROKU_CLIENT;
   on:
-    branch: nginx
+    branch: main
+  api_key:
+    secure: ADW2nYz/OUmvXPMSJYwZk4z8hGSNfHFenlG6wRYZ2jEpX15nACQbvA81JnP+2Lto1I1kRvqVU9a9Q3NVA6p+t9AE0UWDwN3R9T796cok4WfS+Lnb5N2IkNkKw8oh2KjiKGiVeAsrzFfjjrshMGLu1ZJ9TC/viW4Xmq25x86iYBPGUWO+Kt3QUKimFKf6ahL3jkXHmJs3zLzgiSh2I3sqYFnq/Fs2LsQpRS44RFX+2KfAvqIPc34YGkzX1On2VDSMlSslz+IIZtke5xrRek72HAA5JMCvDLSom5cm6tO9GBTm78QkAGNmYPnEXVOjKGYVlYTX9G6p2n0x2riY3EhVaI6aqFmBED9T1q1qHDMmffPIENTYoilY410sO/GyHbyLvaOFoRak/WEmNwh+wElJooiqb1RBnyyb3XjObhGWl8vfvUM1LfnMKWZyznz/UxBwanEsgqFYCPe01aUrp5CKMPnmkCj5FR9jTzEuCvcA0Skp8/rWKNi2AazOt1uSPpgPanVzO8/yjDu3E/qW2Xl4OcjYmd3fPOiYixyGqyKtsGY//SoHnHmmHE0fUt/MKi4Zdwv+lgZhSAumVYLm3jKl9Rukr3mwMBA9h1igAdg52Hnipw5HK5KbURLGAqz6JuOzL3+NLyJzWEe0wYYunyGidTNJ1jTVm/3gQuO8HmN4UdE=

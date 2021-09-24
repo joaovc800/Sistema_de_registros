@@ -2,3 +2,5 @@ node_modules
 .eslintcache
 ./client/.eslintcache
 docker-compose.yml
+.travis.yml
+Dockerfile.dev
