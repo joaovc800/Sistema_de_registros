@@ -1,0 +1,51 @@
+FROM php:7.3.28-fpm-alpine3.12
+
+# 
+RUN apk upgrade && apk update && apk add -U libmcrypt-dev \
+    autoconf \
+    build-base \
+    openrc --no-cache \
+    icu-dev \
+    gettext
+    
+   ## Necessita de uma DB para realizar testes 
+# ENV hostname=#colocar hostname
+# ENV user=#colocar user
+# ENV password=#colocar password
+# ENV db=#colocar database
+
+RUN apk add nginx
+RUN docker-php-ext-install mysqli \
+    opcache \
+    intl \
+    && docker-php-ext-enable mysqli \
+    opcache \
+    intl 
+# PHP_CPPFLAGS are used by the docker-php-ext-* scripts
+ENV PHP_CPPFLAGS="$PHP_CPPFLAGS -std=c++11"
+
+# RUN pecl install mcrypt \
+#     && docker-php-ext-enable mcrypt
+# RUN docker-php-ext-install pdo_mysql
+
+RUN { \
+        echo 'opcache.memory_consumption=128'; \
+        echo 'opcache.interned_strings_buffer=8'; \
+        echo 'opcache.max_accelerated_files=4000'; \
+        echo 'opcache.revalidate_freq=2'; \
+        echo 'opcache.fast_shutdown=1'; \
+        echo 'opcache.enable_cli=1'; \
+    } > /usr/local/etc/php/conf.d/php-opocache-cfg.ini
+
+# COPY ./php.ini /usr/local/etc/php/php.ini Caso necessite de modificar a INI
+RUN openrc && touch /run/openrc/softlevel 
+
+#Caso nginx diga que está iniciando infinito
+COPY ./dev/default-dev.conf /etc/nginx/conf.d/default.conf
+COPY ./dev/iniciar-servicos-dev.sh /etc/iniciar-servicos-dev.sh
+COPY --chown=www-data:www-data ./src /var/www/src
+WORKDIR /var/www/src
+
+EXPOSE 80 443
+RUN chmod +x /etc/iniciar-servicos-dev.sh
+CMD /bin/sh -c "/etc/iniciar-servicos-dev.sh"

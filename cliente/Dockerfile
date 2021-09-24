@@ -37,20 +37,20 @@ RUN { \
 RUN openrc && touch /run/openrc/softlevel 
 
 #Caso nginx diga que está iniciando infinito
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY ./config/default.conf /etc/nginx/conf.d/default.conf
 
 # Copiar e modificar as permissões para utilizar no APP
 COPY --chown=www-data:www-data ./src /var/www/src
 WORKDIR /var/www/src
 
-# Serve para expor pelo server as portas, porém a conf já tem ela
+# Serve para expor pelo server as portas, porém nao tem outro app rodando junto
 EXPOSE 80 443
 
 # Criar permissões para poder execultar o script de inicialização
-COPY ./entrypoint.sh /etc/entrypoint.sh
-RUN chmod +x /etc/entrypoint.sh
+COPY ./config/iniciar-servicos.sh /etc/iniciar-servicos.sh
+RUN chmod +x /etc/iniciar-servicos.sh
 
 # concertar o problema de PID
 RUN mkdir /run/nginx
 
-CMD /bin/sh -c "envsubst '\$PORT' < /etc/nginx/conf.d/default.conf > /etc/nginx/conf.d/default.conf && /etc/entrypoint.sh"
+CMD /bin/sh -c "envsubst '\$PORT' < /etc/nginx/conf.d/default.conf > /etc/nginx/conf.d/default.conf && /etc/iniciar-servicos.sh"
