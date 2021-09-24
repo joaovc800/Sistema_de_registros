@@ -34,7 +34,8 @@ include('php/conexao.php');
 <body>
 
   <div class="wrapper d-flex align-items-stretch">
-    <nav id="sidebar" class="active h-100 fixed-top">
+    <?php include "php/menu.php" ?>
+    <!--<nav id="sidebar" class="active h-100 fixed-top">
       <ul class="list-unstyled components mb-5">
         <li>
           <img class="w-100" src="images/logo.jpeg">
@@ -75,7 +76,7 @@ include('php/conexao.php');
           </script>
         </p>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- Page Content  -->
     <div id="content" class="container w-75 col-md-8 p-2 p-md-5">
