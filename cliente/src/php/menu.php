@@ -4,30 +4,30 @@
           <img class="w-100" src="images/logo.jpeg">
         </li>
         <li class="active">
-          <a href="principal.php"><span class="fa fa-home"></span> Home</a>
+          <a href="principal"><span class="fa fa-home"></span> Home</a>
         </li>
         <li class="">
-          <a href="registrar.php"><span class="fa fa-pen"></span> Novo</a>
+          <a href="registrar"><span class="fa fa-pen"></span> Novo</a>
         </li>
         <li>
-          <a href="registros.php"><span class="fa fa-folder-open"></span>Registros</a>
+          <a href="registros"><span class="fa fa-folder-open"></span>Registros</a>
         </li>
         <li>
-          <a href="pendencias.php"><span class="fas fa-clock"></span>Pendentes</a>
+          <a href="pendencias"><span class="fas fa-clock"></span>Pendentes</a>
         </li>
         <li class="nav-item dropend">
           <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fas fa-search"></span>Buscar</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item text-light text-center" href="buscar2.php">Por Data</a></li>
-            <li><a class="dropdown-item text-light text-center" href="buscar.php">Por Matricula ou RA</a></li>
-            <li><a class="dropdown-item text-light text-center" href="buscar3.php">Por Assunto</a></li>
+            <li><a class="dropdown-item text-light text-center" href="buscar2">Por Data</a></li>
+            <li><a class="dropdown-item text-light text-center" href="buscar">Por Matricula ou RA</a></li>
+            <li><a class="dropdown-item text-light text-center" href="buscar3">Por Assunto</a></li>
           </ul>
         </li>
         <li>
-          <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
+          <a href="perfil"><span class="fas fa-user"></span> Perfil</a>
         </li>
         <li>
-          <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
+          <a href="php/logout"><span class="fas fa-sign-out-alt"></span>Sair</a>
         </li>
       </ul>
 
