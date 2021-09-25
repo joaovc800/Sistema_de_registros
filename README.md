@@ -16,6 +16,7 @@ Bem vindos a nossa documentação do sistema de registros aqui iremos falar um p
 > 3. Bootstrap e HTML usado para o front-end e criação das telas. 
 >  4. Javascript é usados para algumas interações com o usuário principalmente nos botões para mostrar a senha e mascaras de input.
 >  5. O banco foi escolhido o **MySQL** e precisamos usar uma add-on na heroku chamada clear-DB para suportar banco na cloud.
+>  6. O web-app esta rodando em um container (linux alpine) com php-fpm e Nginx. 
 
 ## Vamos Mostrar um pouco sobre o sistema
 
