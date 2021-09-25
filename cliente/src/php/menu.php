@@ -1,7 +1,7 @@
     <nav id="sidebar" class="active h-100 fixed-top">
       <ul class="list-unstyled components mb-5">
         <li>
-            <a href="principal"><img class="w-100" src="images/logo.jpeg"></a>
+           <img class="w-100" src="images/logo.jpeg">
         </li>
         <li class="active">
           <a href="principal"><span class="fa fa-home"></span> Home</a>
