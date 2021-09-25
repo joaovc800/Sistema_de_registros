@@ -7,9 +7,19 @@ Bem vindos a nossa documentação do sistema de registros aqui iremos falar um p
 > O Sistema de resgitros foi criado com o intuido de proporcionar uma melhor experiência para o usuário fazer um registro ou uma ocorrência.
 
 ### Tecnologias usadas
- |<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg">|<img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">|<img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">|<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/heroku/heroku-plain-wordmark.svg">
-|--------------------------------|------------------------|---------------------------------|----------------------------------|
-|<img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">|<img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">|<img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">|<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg">|
+
+<code><img widht="30" height="40" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg"></code>
+<code><img widht="30" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"></code>
+<code><img widht="30" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></code>
+<code><img widht="30" height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
+<code><img widht="30" height="40" src="https://github.com/devicons/devicon/blob/master/icons/heroku/heroku-plain-wordmark.svg"></code>
+<code><img widht="30" height="40" src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg"></code>
+<code><img widht="30" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></code>
+<code><img widht="30" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"></code>
+<code><img widht="30" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"></code>
+<code><img widht="30" height="40" src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg"></code>
+
+<hr>
 
 > 1. Temos uma integração com o **Php, Heroku  e o github**, todos sincronizados.
 > 2. Usamos algumas **variáveis de ambiente** na heroku para camuflarmos o arquivo de conexão com o banco de dados e não deixar as senhas visíveis.
