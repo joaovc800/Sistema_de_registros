@@ -34,7 +34,7 @@ include('php/conexao.php');
 <body>
 
   <div class="wrapper d-flex align-items-stretch">
-  !-- menu sidebar -->
+  <!-- menu sidebar -->
 <?php include "php/menu.php" ?>
 
     <!-- Page Content  -->
