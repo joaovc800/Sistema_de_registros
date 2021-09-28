@@ -1,5 +1,6 @@
 <?php
 include('conexao.php');
+
 $query = "SELECT * FROM usuario WHERE nome = '{$_SESSION['nome']}'";
 $resultado = mysqli_query($conexao, $query);
 $row = mysqli_num_rows($resultado);

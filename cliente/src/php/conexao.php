@@ -1,5 +1,6 @@
 <?php
 
+
 $hostname= $_ENV["URL"]; // varialvel de ambiente heroku
 $user = $_ENV["USERDB"]; // varialvel de ambiente heroku
 $password = $_ENV["PASS"]; // varialvel de ambiente heroku

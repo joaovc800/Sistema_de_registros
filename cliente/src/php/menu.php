@@ -4,16 +4,16 @@
            <img class="w-100" src="images/logo.jpeg">
         </li>
         <li class="active">
-          <a href="principal"><span class="fa fa-home"></span> Home</a>
+          <a href="principal.php"><span class="fa fa-home"></span> Home</a>
         </li>
         <li class="">
-          <a href="registrar"><span class="fa fa-pen"></span> Novo</a>
+          <a href="registrar.php"><span class="fa fa-pen"></span> Novo</a>
         </li>
         <li>
-          <a href="registros"><span class="fa fa-folder-open"></span>Registros</a>
+          <a href="registros.php"><span class="fa fa-folder-open"></span>Registros</a>
         </li>
         <li>
-          <a href="pendencias"><span class="fas fa-clock"></span>Pendentes</a>
+          <a href="pendencias.php"><span class="fas fa-clock"></span>Pendentes</a>
         </li>
         <li class="nav-item dropend">
           <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fas fa-search"></span>Buscar</a>
