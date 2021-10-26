@@ -18,13 +18,13 @@
         <li class="nav-item dropend">
           <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fas fa-search"></span>Buscar</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item text-light text-center" href="buscar2">Por Data</a></li>
-            <li><a class="dropdown-item text-light text-center" href="buscar">Por Matricula ou RA</a></li>
-            <li><a class="dropdown-item text-light text-center" href="buscar3">Por Assunto</a></li>
+            <li><a class="dropdown-item text-light text-center" href="buscar2.php">Por Data</a></li>
+            <li><a class="dropdown-item text-light text-center" href="buscar.php">Por Matricula ou RA</a></li>
+            <li><a class="dropdown-item text-light text-center" href="buscar3.php">Por Assunto</a></li>
           </ul>
         </li>
         <li>
-          <a href="perfil"><span class="fas fa-user"></span> Perfil</a>
+          <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
         </li>
         <li>
           <a href="php/logout"><span class="fas fa-sign-out-alt"></span>Sair</a>
