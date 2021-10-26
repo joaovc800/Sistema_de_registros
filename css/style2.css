@@ -174,3 +174,10 @@ nav.sli ul li a:hover:after {
         width: 100%;
     }
 }
+nav#sidebar:hover {
+    overflow-y: scroll;
+}
+nav#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
