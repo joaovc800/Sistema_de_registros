@@ -1,5 +1,16 @@
 # Sistema De Registros
 
+#Integrantes
+
+| RA | NOME | PERÍODO|
+|--|--| --|
+| 920102019 | JOÃO VINICIUS DA COSTA | TERÇA(MANHÃ)|
+| SEU RA| NOME COMPLETO  | TERÇA(MANHÃ)|
+| SEU RA| NOME COMPLETO | TERÇA(MANHÃ)|
+| SEU RA| NOME COMPLETO | TERÇA(MANHÃ)|
+| SEU RA| NOME COMPLETO | TERÇA(MANHÃ)|
+| SEU RA| NOME COMPLETO | TERÇA(MANHÃ)|
+
 ## Documentação
 
 Bem vindos a nossa documentação do sistema de registros aqui iremos falar um pouco sobre as funcionalidades desse sistema.
