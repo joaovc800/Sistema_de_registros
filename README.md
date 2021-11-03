@@ -1,6 +1,6 @@
 # Sistema De Registros
 
-#Integrantes
+# Integrantes
 
 | RA | NOME | PERÍODO|
 |--|--| --|
