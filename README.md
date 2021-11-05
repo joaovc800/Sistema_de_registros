@@ -1,5 +1,16 @@
 # Sistema De Registros
 
+# Integrantes
+
+| RA | NOME | PERÍODO|
+|--|--| --|
+| 920102019 | JOÃO VINICIUS DA COSTA | TERCA(MANHÃ)|
+| 920123532 | GABRIEL BARBOSA TEIXEIRA | TERCA(MANHÃ)|
+| 920110693| LEONARDO AUGUSTO COELHO FERREIRA | TERCA(MANHÃ)|
+| 2220103634| MARCEL HENRIQUE SILVA DAMIAO | TERCA(MANHÃ)|
+| 920106125| WILLYAN LOPES DE CARVALHO| TERCA(MANHÃ)|
+| 921200237| EMERSON DOS SANTOS NUNES | TERCA(MANHÃ)|
+
 ## Documentação
 
 Bem vindos a nossa documentação do sistema de registros aqui iremos falar um pouco sobre as funcionalidades desse sistema.
