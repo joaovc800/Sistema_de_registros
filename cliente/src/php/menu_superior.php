@@ -1,3 +1,62 @@
+
+<style>       
+    .navbar {
+        min-height: 80px;
+        font-size: 0.8rem;
+        font-weight:500;
+    }
+
+    .navbar-brand {
+        padding: 0 15px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .navbar-toggle {
+        /* (80px - button height 34px) / 2 = 23px */
+        margin-top: 23px;
+        padding: 9px 10px !important;
+    }
+
+    @media (min-width: 768px) {
+        .navbar-nav > li > a {
+            /* (80px - line-height of 27px) / 2 = 26.5px */
+            padding-top: 26.5px;
+            padding-bottom: 26.5px;
+            line-height: 27px;
+        }
+    }
+    .bottom-space {
+        margin-bottom: 20px;
+    }
+    #navbar_logged_in > a:link {
+        color: white ; 
+    }
+    #navbar_logged_in > a:hover {
+        opacity:0.7 ; 
+    }
+    #navbar_logged_in > a:visited {
+        color: white ;
+    }
+
+    #navbar_logged_in > li.nav-link{
+        color:white;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+        background-color: #17A2B8;
+    }
+
+    /* body {
+        padding-top: 110px;
+    } */
+
+    .main-nav a:hover {       
+        background-color: #0D47A1!important;
+        
+
+    }  
+</style>
 <nav class="sli navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container-fluid">
 
