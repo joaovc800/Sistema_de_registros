@@ -7,7 +7,7 @@
           <a href="principal.php"><span class="fa fa-home"></span> Home</a>
         </li>
         <li class="">
-          <a href="registrar.php"><span class="fa fa-pen"></span> Novoss</a>
+          <a href="registrar.php"><span class="fa fa-pen"></span> Novo</a>
         </li>
         <li>
           <a href="registros.php"><span class="fa fa-folder-open"></span>Registros</a>
