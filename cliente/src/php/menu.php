@@ -1,4 +1,4 @@
-    <nav id="sidebar" class="active h-100 fixed-top">
+    <nav id="sidebar" class="active h-100 fixed-top mr-2">
       <ul class="list-unstyled components mb-5">
         <li>
            <img class="w-100" src="images/logo.jpeg">
@@ -7,7 +7,7 @@
           <a href="principal.php"><span class="fa fa-home"></span> Home</a>
         </li>
         <li class="">
-          <a href="registrar.php"><span class="fa fa-pen"></span> Novo</a>
+          <a href="registrar.php"><span class="fa fa-pen"></span> Novoss</a>
         </li>
         <li>
           <a href="registros.php"><span class="fa fa-folder-open"></span>Registros</a>
@@ -27,7 +27,7 @@
           <a href="perfil.php"><span class="fas fa-user"></span> Perfil</a>
         </li>
         <li>
-          <a href="php/logout"><span class="fas fa-sign-out-alt"></span>Sair</a>
+          <a href="php/logout.php"><span class="fas fa-sign-out-alt"></span>Sair</a>
         </li>
       </ul>
 
